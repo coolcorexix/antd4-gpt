@@ -1,0 +1,2734 @@
+2023-12-15 06:31:06.759 GMT [81979] FATAL:  F0001: lock file "postmaster.pid" already exists
+2023-12-15 06:31:06.759 GMT [81979] HINT:  Is another postmaster (PID 79386) running in data directory "/Users/huyphatpham/Documents/nemo-lab.nosync/antd4-gpt/.devenv/state/postgres"?
+2023-12-15 06:31:06.759 GMT [81979] LOCATION:  CreateLockFile, miscinit.c:1160
+2023-12-15 06:31:36.928 GMT [82297] LOG:  00000: starting PostgreSQL 15.5 on aarch64-apple-darwin22.6.0, compiled by clang version 16.0.6, 64-bit
+2023-12-15 06:31:36.928 GMT [82297] LOCATION:  PostmasterMain, postmaster.c:1201
+2023-12-15 06:31:36.929 GMT [82297] LOG:  00000: listening on IPv4 address "127.0.0.1", port 54345
+2023-12-15 06:31:36.929 GMT [82297] LOCATION:  StreamServerPort, pqcomm.c:585
+2023-12-15 06:31:36.929 GMT [82297] LOG:  00000: listening on Unix socket "./.s.PGSQL.54345"
+2023-12-15 06:31:36.929 GMT [82297] LOCATION:  StreamServerPort, pqcomm.c:579
+2023-12-15 06:31:36.931 GMT [82300] LOG:  00000: database system was shut down at 2023-12-15 06:31:34 GMT
+2023-12-15 06:31:36.931 GMT [82300] LOCATION:  StartupXLOG, xlog.c:4930
+2023-12-15 06:31:36.933 GMT [82297] LOG:  00000: database system is ready to accept connections
+2023-12-15 06:31:36.933 GMT [82297] LOCATION:  reaper, postmaster.c:3121
+2023-12-15 06:33:16.253 GMT [83371] FATAL:  28P01: password authentication failed for user "postgres"
+2023-12-15 06:33:16.253 GMT [83371] DETAIL:  Password does not match for user "postgres".
+	Connection matched pg_hba.conf line 85: "local   all             all                                     md5"
+2023-12-15 06:33:16.253 GMT [83371] LOCATION:  auth_failed, auth.c:329
+2023-12-15 06:36:36.935 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 06:36:36.935 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 06:36:36.939 GMT [82298] LOG:  00000: checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.005 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2023-12-15 06:36:36.939 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 06:44:56.018 GMT [90818] FATAL:  3D000: database "antd4-gpt" does not exist
+2023-12-15 06:44:56.018 GMT [90818] LOCATION:  InitPostgres, postinit.c:947
+2023-12-15 06:46:20.909 GMT [90962] ERROR:  42601: syntax error at or near "-" at character 22
+2023-12-15 06:46:20.909 GMT [90962] LOCATION:  scanner_yyerror, scan.l:1192
+2023-12-15 06:46:20.909 GMT [90962] STATEMENT:  CREATE DATABASE antd4-gpt;
+2023-12-15 06:47:43.761 GMT [92613] FATAL:  3D000: database "antd4-gpt" does not exist
+2023-12-15 06:47:43.761 GMT [92613] LOCATION:  InitPostgres, postinit.c:947
+2023-12-15 06:47:49.232 GMT [92680] FATAL:  3D000: database "antd4_gpt" does not exist
+2023-12-15 06:47:49.232 GMT [92680] LOCATION:  InitPostgres, postinit.c:947
+2023-12-15 06:48:42.320 GMT [90962] ERROR:  42601: syntax error at or near "CREATE" at character 28
+2023-12-15 06:48:42.320 GMT [90962] LOCATION:  scanner_yyerror, scan.l:1192
+2023-12-15 06:48:42.320 GMT [90962] STATEMENT:  CREATE DATABASE antd4_gpt 
+	CREATE DATABASE antd_gpt;
+2023-12-15 06:49:05.017 GMT [90962] ERROR:  42601: syntax error at or near "clear" at character 1
+2023-12-15 06:49:05.017 GMT [90962] LOCATION:  scanner_yyerror, scan.l:1192
+2023-12-15 06:49:05.017 GMT [90962] STATEMENT:  clear
+	CREATE DATABASE antd4_gp;
+2023-12-15 06:49:09.016 GMT [90962] ERROR:  42601: syntax error at or near "clear" at character 1
+2023-12-15 06:49:09.016 GMT [90962] LOCATION:  scanner_yyerror, scan.l:1192
+2023-12-15 06:49:09.016 GMT [90962] STATEMENT:  clear
+	CREATE DATABASE antd4_gp;
+2023-12-15 06:49:29.105 GMT [90962] ERROR:  42601: syntax error at or near "DATABASE" at character 8
+2023-12-15 06:49:29.105 GMT [90962] LOCATION:  scanner_yyerror, scan.l:1192
+2023-12-15 06:49:29.105 GMT [90962] STATEMENT:  DELETE DATABASE antd_gp;
+2023-12-15 06:49:37.291 GMT [90962] ERROR:  3D000: database "antd_gp" does not exist
+2023-12-15 06:49:37.291 GMT [90962] LOCATION:  dropdb, dbcommands.c:1549
+2023-12-15 06:49:37.291 GMT [90962] STATEMENT:  DROP DATABASE antd_gp;
+2023-12-15 06:51:36.931 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 06:51:36.931 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 06:54:38.676 GMT [97139] ERROR:  42P01: relation "scanned_documents" does not exist at character 22
+2023-12-15 06:54:38.676 GMT [97139] LOCATION:  parserOpenTable, parse_relation.c:1395
+2023-12-15 06:54:38.676 GMT [97139] STATEMENT:  
+	        INSERT INTO scanned_documents (href, text_content)
+	        VALUES ('https://4x.ant.design/', '
+	
+	
+	
+	
+	
+	
+	Ant Design - The world''s second most popular React UI framework
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Ant DesignDesignDocsComponentsResources4.24.15中文RTLMoreStarA design system for enterprise-level products. Create an efficient and enjoyable work experience.Getting StartedDesign LanguageRecommendedDesign language and frameworkDesign valuesThis is Ant Design''s internal standard for evaluating design quality. Based on the assumption that "everyone is pursuing happiness at work", we have added the two values of "Meaningfulness" and "Growth" on the basis of "Certainty" and "Naturalness" to guide each designer towards better judgment and decision-making.More detailsCertaintyMeaningfulnessGrowthNaturalnessGuidelinesGlobal styleDesign patternsComponentsAnt Design of React(official)Ant Design of Angular(community)Ant Design of Vue(community)AntVA new way to do data visualizationAnt Design ProOut-of-the-box UI solution for enterprise applicationsAnt Design MobileMobile UI components with Ant DesignHiTuA new generation of graphical solutionsKitchenA Sketch plugin to enhance designersIconsA set of premium iconsLearn MoreMoreResourcesAnt Design ChartsAnt Design ProAnt Design Pro ComponentsAnt Design MobileAnt Design Landing-Landing TemplatesScaffolds-Scaffold MarketUmi-React Application FrameworkDumi-Component doc generatorqiankun-Micro-Frontends Frameworkahooks-React Hooks LibraryAnt Motion-Motion SolutionChina Mirror 🇨🇳CommunityAwesome Ant DesignMediumTwitterAnt Design BlogExperience Cloud BlogSEE Conf-Experience Tech ConferenceHelpGitHubChange LogFAQBug ReportIssuesDiscussionsStackOverflowSegmentFaultMore ProductsYuQue-Write your document as a teamAntV-Data VisualizationEgg-Enterprise Node.js FrameworkKitchen-Sketch ToolkitAnt Financial Experience TechChange theme colorMade with ❤ by XTech
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	')
+	        RETURNING id;
+	        
+2023-12-15 06:54:40.272 GMT [97139] ERROR:  25P02: current transaction is aborted, commands ignored until end of transaction block
+2023-12-15 06:54:40.272 GMT [97139] LOCATION:  exec_simple_query, postgres.c:1116
+2023-12-15 06:54:40.272 GMT [97139] STATEMENT:  
+	        INSERT INTO scanned_documents (href, text_content)
+	        VALUES ('https://4x.ant.design/components/icon/', '
+	
+	
+	
+	
+	
+	
+	 Icon - Ant Design
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Ant DesignDesignDocsComponentsResources4.24.15中文RTLMoreStarComponents OverviewGeneralButtonIconTypographyLayoutDividerGridLayoutSpaceNavigationAffixBreadcrumbDropdownMenuPageHeaderPaginationStepsData EntryAutoCompleteCascaderCheckboxDatePickerFormInputInputNumberMentionsRadioRateSelectSliderSwitchTimePickerTransferTreeSelectUploadData DisplayAvatarBadgeCalendarCardCarouselCollapseCommentDescriptionsEmptyImageListPopoverSegmentedStatisticTableTabsTagTimelineTooltipTreeFeedbackAlertDrawerMessageModalNotificationPopconfirmProgressResultSkeletonSpinOtherAnchorBackTopConfigProviderBasicTwo-tone icon and colorful iconCustom IconUse iconfont.cnMultiple resources from iconfont.cnAPIIconSemantic vector graphics. Before use icons, you need to install @ant-design/icons package:npm install --save @ant-design/iconsList of icons# Outlined Filled Two ToneDirectional IconsStepBackwardOutlinedStepForwardOutlinedFastBackwardOutlinedFastForwardOutlinedShrinkOutlinedArrowsAltOutlinedDownOutlinedUpOutlinedLeftOutlinedRightOutlinedCaretUpOutlinedCaretDownOutlinedCaretLeftOutlinedCaretRightOutlinedUpCircleOutlinedDownCircleOutlinedLeftCircleOutlinedRightCircleOutlinedDoubleRightOutlinedDoubleLeftOutlinedVerticalLeftOutlinedVerticalRightOutlinedVerticalAlignTopOutlinedVerticalAlignMiddleOutlinedVerticalAlignBottomOutlinedForwardOutlinedBackwardOutlinedRollbackOutlinedEnterOutlinedRetweetOutlinedSwapOutlinedSwapLeftOutlinedSwapRightOutlinedArrowUpOutlinedArrowDownOutlinedArrowLeftOutlinedArrowRightOutlinedPlayCircleOutlinedUpSquareOutlinedDownSquareOutlinedLeftSquareOutlinedRightSquareOutlinedLoginOutlinedLogoutOutlinedMenuFoldOutlinedMenuUnfoldOutlinedBorderBottomOutlinedBorderHorizontalOutlinedBorderInnerOutlinedBorderOuterOutlinedBorderLeftOutlinedBorderRightOutlinedBorderTopOutlinedBorderVerticleOutlinedPicCenterOutlinedPicLeftOutlinedPicRightOutlinedRadiusBottomleftOutlinedRadiusBottomrightOutlinedRadiusUpleftOutlinedRadiusUprightOutlinedFullscreenOutlinedFullscreenExitOutlinedSuggested IconsQuestionOutlinedQuestionCircleOutlinedPlusOutlinedPlusCircleOutlinedPauseOutlinedPauseCircleOutlinedMinusOutlinedMinusCircleOutlinedPlusSquareOutlinedMinusSquareOutlinedInfoOutlinedInfoCircleOutlinedExclamationOutlinedExclamationCircleOutlinedCloseOutlinedCloseCircleOutlinedCloseSquareOutlinedCheckOutlinedCheckCircleOutlinedCheckSquareOutlinedClockCircleOutlinedWarningOutlinedIssuesCloseOutlinedStopOutlinedEditor IconsEditOutlinedFormOutlinedCopyOutlinedScissorOutlinedDeleteOutlinedSnippetsOutlinedDiffOutlinedHighlightOutlinedAlignCenterOutlinedAlignLeftOutlinedAlignRightOutlinedBgColorsOutlinedBoldOutlinedItalicOutlinedUnderlineOutlinedStrikethroughOutlinedRedoOutlinedUndoOutlinedZoomInOutlinedZoomOutOutlinedFontColorsOutlinedFontSizeOutlinedLineHeightOutlinedDashOutlinedSmallDashOutlinedSortAscendingOutlinedSortDescendingOutlinedDragOutlinedOrderedListOutlinedUnorderedListOutlinedRadiusSettingOutlinedColumnWidthOutlinedColumnHeightOutlinedData IconsAreaChartOutlinedPieChartOutlinedBarChartOutlinedDotChartOutlinedLineChartOutlinedRadarChartOutlinedHeatMapOutlinedFallOutlinedRiseOutlinedStockOutlinedBoxPlotOutlinedFundOutlinedSlidersOutlinedBrand and LogosAndroidOutlinedAppleOutlinedWindowsOutlinedIeOutlinedChromeOutlinedGithubOutlinedAliwangwangOutlinedDingdingOutlinedWeiboSquareOutlinedWeiboCircleOutlinedTaobaoCircleOutlinedHtml5OutlinedWeiboOutlinedTwitterOutlinedWechatOutlinedYoutubeOutlinedAlipayCircleOutlinedTaobaoOutlinedSkypeOutlinedQqOutlinedMediumWorkmarkOutlinedGitlabOutlinedMediumOutlinedLinkedinOutlinedGooglePlusOutlinedDropboxOutlinedFacebookOutlinedCodepenOutlinedCodeSandboxOutlinedAmazonOutlinedGoogleOutlinedCodepenCircleOutlinedAlipayOutlinedAntDesignOutlinedAntCloudOutlinedAliyunOutlinedZhihuOutlinedSlackOutlinedSlackSquareOutlinedBehanceOutlinedBehanceSquareOutlinedDribbbleOutlinedDribbbleSquareOutlinedInstagramOutlinedYuqueOutlinedAlibabaOutlinedYahooOutlinedRedditOutlinedSketchOutlinedWhatsAppOutlinedDingtalkOutlinedApplication IconsAccountBookOutlinedAimOutlinedAlertOutlinedApartmentOutlinedApiOutlinedAppstoreAddOutlinedAppstoreOutlinedAudioOutlinedAudioMutedOutlinedAuditOutlinedBankOutlinedBarcodeOutlinedBarsOutlinedBellOutlinedBlockOutlinedBookOutlinedBorderOutlinedBorderlessTableOutlinedBranchesOutlinedBugOutlinedBuildOutlinedBulbOutlinedCalculatorOutlinedCalendarOutlinedCameraOutlinedCarOutlinedCarryOutOutlinedCiCircleOutlinedCiOutlinedClearOutlinedCloudDownloadOutlinedCloudOutlinedCloudServerOutlinedCloudSyncOutlinedCloudUploadOutlinedClusterOutlinedCodeOutlinedCoffeeOutlinedCommentOutlinedCompassOutlinedCompressOutlinedConsoleSqlOutlinedContactsOutlinedContainerOutlinedControlOutlinedCopyrightOutlinedCreditCardOutlinedCrownOutlinedCustomerServiceOutlinedDashboardOutlinedDatabaseOutlinedDeleteColumnOutlinedDeleteRowOutlinedDeliveredProcedureOutlinedDeploymentUnitOutlinedDesktopOutlinedDisconnectOutlinedDislikeOutlinedDollarCircleOutlinedDollarOutlinedDownloadOutlinedEllipsisOutlinedEnvironmentOutlinedEuroCircleOutlinedEuroOutlinedExceptionOutlinedExpandAltOutlinedExpandOutlinedExperimentOutlinedExportOutlinedEyeOutlinedEyeInvisibleOutlinedFieldBinaryOutlinedFieldNumberOutlinedFieldStringOutlinedFieldTimeOutlinedFileAddOutlinedFileDoneOutlinedFileExcelOutlinedFileExclamationOutlinedFileOutlinedFileGifOutlinedFileImageOutlinedFileJpgOutlinedFileMarkdownOutlinedFilePdfOutlinedFilePptOutlinedFileProtectOutlinedFileSearchOutlinedFileSyncOutlinedFileTextOutlinedFileUnknownOutlinedFileWordOutlinedFileZipOutlinedFilterOutlinedFireOutlinedFlagOutlinedFolderAddOutlinedFolderOutlinedFolderOpenOutlinedFolderViewOutlinedForkOutlinedFormatPainterOutlinedFrownOutlinedFunctionOutlinedFundProjectionScreenOutlinedFundViewOutlinedFunnelPlotOutlinedGatewayOutlinedGifOutlinedGiftOutlinedGlobalOutlinedGoldOutlinedGroupOutlinedHddOutlinedHeartOutlinedHistoryOutlinedHolderOutlinedHomeOutlinedHourglassOutlinedIdcardOutlinedImportOutlinedInboxOutlinedInsertRowAboveOutlinedInsertRowBelowOutlinedInsertRowLeftOutlinedInsertRowRightOutlinedInsuranceOutlinedInteractionOutlinedKeyOutlinedLaptopOutlinedLayoutOutlinedLikeOutlinedLineOutlinedLinkOutlinedLoading3QuartersOutlinedLoadingOutlinedLockOutlinedMacCommandOutlinedMailOutlinedManOutlinedMedicineBoxOutlinedMehOutlinedMenuOutlinedMergeCellsOutlinedMessageOutlinedMobileOutlinedMoneyCollectOutlinedMonitorOutlinedMoreOutlinedNodeCollapseOutlinedNodeExpandOutlinedNodeIndexOutlinedNotificationOutlinedNumberOutlinedOneToOneOutlinedPaperClipOutlinedPartitionOutlinedPayCircleOutlinedPercentageOutlinedPhoneOutlinedPictureOutlinedPlaySquareOutlinedPoundCircleOutlinedPoundOutlinedPoweroffOutlinedPrinterOutlinedProfileOutlinedProjectOutlinedPropertySafetyOutlinedPullRequestOutlinedPushpinOutlinedQrcodeOutlinedReadOutlinedReconciliationOutlinedRedEnvelopeOutlinedReloadOutlinedRestOutlinedRobotOutlinedRocketOutlinedRotateLeftOutlinedRotateRightOutlinedSafetyCertificateOutlinedSafetyOutlinedSaveOutlinedScanOutlinedScheduleOutlinedSearchOutlinedSecurityScanOutlinedSelectOutlinedSendOutlinedSettingOutlinedShakeOutlinedShareAltOutlinedShopOutlinedShoppingCartOutlinedShoppingOutlinedSisternodeOutlinedSkinOutlinedSmileOutlinedSolutionOutlinedSoundOutlinedSplitCellsOutlinedStarOutlinedSubnodeOutlinedSwitcherOutlinedSyncOutlinedTableOutlinedTabletOutlinedTagOutlinedTagsOutlinedTeamOutlinedThunderboltOutlinedToTopOutlinedToolOutlinedTrademarkCircleOutlinedTrademarkOutlinedTransactionOutlinedTranslationOutlinedTrophyOutlinedUngroupOutlinedUnlockOutlinedUploadOutlinedUsbOutlinedUserAddOutlinedUserDeleteOutlinedUserOutlinedUserSwitchOutlinedUsergroupAddOutlinedUsergroupDeleteOutlinedVerifiedOutlinedVideoCameraAddOutlinedVideoCameraOutlinedWalletOutlinedWifiOutlinedWomanOutlinedExamplesBasicImport icons from @ant-design/icons, component name of icons with different theme is the icon name suffixed by the theme name. Specify the spin property to show spinning animation.TypeScriptJavaScriptimport {
+	  HomeOutlined,
+	  LoadingOutlined,
+	  SettingFilled,
+	  SmileOutlined,
+	  SyncOutlined,
+	} from ''@ant-design/icons'';
+	import { Space } from ''antd'';
+	import React from ''react'';
+	
+	const App: React.FC = () => (
+	  <Space>
+	    <HomeOutlined />
+	    <SettingFilled />
+	    <SmileOutlined />
+	    <SyncOutlined spin />
+	    <SmileOutlined rotate={180} />
+	    <LoadingOutlined />
+	  </Space>
+	);
+	
+	export default App;Custom IconCreate a reusable React component by using <Icon component={...} />. The property component takes a React component that renders to svg element.TypeScriptJavaScriptimport Icon, { HomeOutlined } from ''@ant-design/icons'';
+	import type { CustomIconComponentProps } from ''@ant-design/icons/lib/components/Icon'';
+	import { Space } from ''antd'';
+	import React from ''react'';
+	
+	const HeartSvg = () => (
+	  <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 1024 1024">
+	    <path d="M923 283.6c-13.4-31.1-32.6-58.9-56.9-82.8-24.3-23.8-52.5-42.4-84-55.5-32.5-13.5-66.9-20.3-102.4-20.3-49.3 0-97.4 13.5-139.2 39-10 6.1-19.5 12.8-28.5 20.1-9-7.3-18.5-14-28.5-20.1-41.8-25.5-89.9-39-139.2-39-35.5 0-69.9 6.8-102.4 20.3-31.4 13-59.7 31.7-84 55.5-24.4 23.9-43.5 51.7-56.9 82.8-13.9 32.3-21 66.6-21 101.9 0 33.3 6.8 68 20.3 103.3 11.3 29.5 27.5 60.1 48.2 91 32.8 48.9 77.9 99.9 133.9 151.6 92.8 85.7 184.7 144.9 188.6 147.3l23.7 15.2c10.5 6.7 24 6.7 34.5 0l23.7-15.2c3.9-2.5 95.7-61.6 188.6-147.3 56-51.7 101.1-102.7 133.9-151.6 20.7-30.9 37-61.5 48.2-91 13.5-35.3 20.3-70 20.3-103.3 0.1-35.3-7-69.6-20.9-101.9z" />
+	  </svg>
+	);
+	
+	const PandaSvg = () => (
+	  <svg viewBox="0 0 1024 1024" width="1em" height="1em" fill="currentColor">
+	    <path
+	      d="M99.096 315.634s-82.58-64.032-82.58-132.13c0-66.064 33.032-165.162 148.646-148.646 83.37 11.91 99.096 165.162 99.096 165.162l-165.162 115.614zM924.906 315.634s82.58-64.032 82.58-132.13c0-66.064-33.032-165.162-148.646-148.646-83.37 11.91-99.096 165.162-99.096 165.162l165.162 115.614z"
+	      fill="#6B676E"
+	    />
+	    <path
+	      d="M1024 561.548c0 264.526-229.23 429.42-512.002 429.42S0 826.076 0 561.548 283.96 66.064 512.002 66.064 1024 297.022 1024 561.548z"
+	      fill="#FFEBD2"
+	    />
+	    <path
+	      d="M330.324 842.126c0 82.096 81.34 148.646 181.678 148.646s181.678-66.55 181.678-148.646H330.324z"
+	      fill="#E9D7C3"
+	    />
+	    <path
+	      d="M644.13 611.098C594.582 528.516 561.55 512 512.002 512c-49.548 0-82.58 16.516-132.13 99.096-42.488 70.814-78.73 211.264-49.548 247.742 66.064 82.58 165.162 33.032 181.678 33.032 16.516 0 115.614 49.548 181.678-33.032 29.18-36.476-7.064-176.93-49.55-247.74z"
+	      fill="#FFFFFF"
+	    />
+	    <path
+	      d="M611.098 495.484c0-45.608 36.974-82.58 82.58-82.58 49.548 0 198.194 99.098 198.194 165.162s-79.934 144.904-148.646 99.096c-49.548-33.032-132.128-148.646-132.128-181.678zM412.904 495.484c0-45.608-36.974-82.58-82.58-82.58-49.548 0-198.194 99.098-198.194 165.162s79.934 144.904 148.646 99.096c49.548-33.032 132.128-148.646 132.128-181.678z"
+	      fill="#6B676E"
+	    />
+	    <path
+	      d="M512.002 726.622c-30.06 0-115.614 5.668-115.614 33.032 0 49.638 105.484 85.24 115.614 82.58 10.128 2.66 115.614-32.944 115.614-82.58-0.002-27.366-85.556-33.032-115.614-33.032z"
+	      fill="#464655"
+	    />
+	    <path
+	      d="M330.324 495.484m-33.032 0a33.032 33.032 0 1 0 66.064 0 33.032 33.032 0 1 0-66.064 0Z"
+	      fill="#464655"
+	    />
+	    <path
+	      d="M693.678 495.484m-33.032 0a33.032 33.032 0 1 0 66.064 0 33.032 33.032 0 1 0-66.064 0Z"
+	      fill="#464655"
+	    />
+	  </svg>
+	);
+	
+	const HeartIcon = (props: Partial<CustomIconComponentProps>) => (
+	  <Icon component={HeartSvg} {...props} />
+	);
+	
+	const PandaIcon = (props: Partial<CustomIconComponentProps>) => (
+	  <Icon component={PandaSvg} {...props} />
+	);
+	
+	const App: React.FC = () => (
+	  <Space>
+	    <HeartIcon style={{ color: ''hotpink'' }} />
+	    <PandaIcon style={{ fontSize: ''32px'' }} />
+	    <Icon component={HomeOutlined as React.ForwardRefExoticComponent<any>} />
+	    <HomeOutlined />
+	  </Space>
+	);
+	
+	export default App;Multiple resources from iconfont.cnYou can use scriptUrl as an array after @ant-design/icons@4.1.0, manage icons in one <Icon /> from multiple iconfont.cn resources. If icon with a duplicate name in resources, it will overrided in array order.TypeScriptJavaScriptimport { createFromIconfontCN } from ''@ant-design/icons'';
+	import { Space } from ''antd'';
+	import React from ''react'';
+	
+	const IconFont = createFromIconfontCN({
+	  scriptUrl: [
+	    ''//at.alicdn.com/t/font_1788044_0dwu4guekcwr.js'', // icon-javascript, icon-java, icon-shoppingcart (overrided)
+	    ''//at.alicdn.com/t/font_1788592_a5xf2bdic3u.js'', // icon-shoppingcart, icon-python
+	  ],
+	});
+	
+	const App: React.FC = () => (
+	  <Space>
+	    <IconFont type="icon-javascript" />
+	    <IconFont type="icon-java" />
+	    <IconFont type="icon-shoppingcart" />
+	    <IconFont type="icon-python" />
+	  </Space>
+	);
+	
+	export default App;Two-tone icon and colorful iconYou can set twoToneColor prop to specific primary color for two-tone icons.TypeScriptJavaScriptimport { CheckCircleTwoTone, HeartTwoTone, SmileTwoTone } from ''@ant-design/icons'';
+	import { Space } from ''antd'';
+	import React from ''react'';
+	
+	const App: React.FC = () => (
+	  <Space>
+	    <SmileTwoTone />
+	    <HeartTwoTone twoToneColor="#eb2f96" />
+	    <CheckCircleTwoTone twoToneColor="#52c41a" />
+	  </Space>
+	);
+	
+	export default App;Use iconfont.cnIf you are using iconfont.cn, you can use the icons in your project gracefully.TypeScriptJavaScriptimport { createFromIconfontCN } from ''@ant-design/icons'';
+	import { Space } from ''antd'';
+	import React from ''react'';
+	
+	const IconFont = createFromIconfontCN({
+	  scriptUrl: ''//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js'',
+	});
+	
+	const App: React.FC = () => (
+	  <Space>
+	    <IconFont type="icon-tuichu" />
+	    <IconFont type="icon-facebook" />
+	    <IconFont type="icon-twitter" />
+	  </Space>
+	);
+	
+	export default App;API#Common Icon#PropertyDescriptionTypeDefaultVersionclassNameThe className of Iconstring-rotateRotate by n degrees (not working in IE9)number-spinRotate icon with animationbooleanfalsestyleThe style properties of icon, like fontSize and colorCSSProperties-twoToneColorOnly supports the two-tone icon. Specify the primary colorstring (hex color)-We still have three different themes for icons, icon component name is the icon name suffixed by the theme name.import { StarOutlined, StarFilled, StarTwoTone } from ''@ant-design/icons'';
+	
+	<StarOutlined />
+	<StarFilled />
+	<StarTwoTone twoToneColor="#eb2f96" />Custom Icon#PropertyDescriptionTypeDefaultVersioncomponentThe component used for the root nodeComponentType<CustomIconComponentProps>-rotateRotate degrees (not working in IE9)number-spinRotate icon with animationbooleanfalsestyleThe style properties of icon, like fontSize and colorCSSProperties-About SVG icons#We introduced SVG icons in version 3.9.0, replacing font icons. This has the following benefits:Complete offline usage of icons, without dependency on a CDN-hosted font icon file (No more empty square during downloading and no need to deploy icon font files locally either!)Much more display accuracy on lower-resolution screensThe ability to choose icon colorNo need to change built-in icons with overriding styles by providing more props in componentMore discussion of SVG icon reference at #10353.⚠️ Given the extra bundle size caused by all SVG icons imported in 3.9.0, we will provide a new API to allow developers to import icons as needed, you can track #12011 for updates.While you wait, you can use webpack plugin from the community to chunk the icon file.The properties theme, component and twoToneColor were added in 3.9.0. The best practice is to pass the property theme to every <Icon /> component.import { MessageOutlined } from ''@ant-design/icons'';
+	
+	<MessageOutlined style={{ fontSize: ''16px'', color: ''#08c'' }} />;All the icons will render to <svg>. You can still set style and className for size and color of icons.<Icon type="message" style={{ fontSize: ''16px'', color: ''#08c'' }} theme="outlined" />Set TwoTone Color#When using the two-tone icons, you can use the static methods getTwoToneColor() and setTwoToneColor(colorString) to specify the primary color.import { getTwoToneColor, setTwoToneColor } from ''@ant-design/icons'';
+	
+	setTwoToneColor(''#eb2f96'');
+	getTwoToneColor(); // #eb2f96Custom Font Icon#We added a createFromIconfontCN function to help developer use their own icons deployed at iconfont.cn in a convenient way.This method is specified for iconfont.cn.import { createFromIconfontCN } from ''@ant-design/icons'';
+	
+	const MyIcon = createFromIconfontCN({
+	  scriptUrl: ''//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js'', // 在 iconfont.cn 上生成
+	});
+	
+	ReactDOM.render(<MyIcon type="icon-example" />, mountedNode);It creates a component that uses SVG sprites in essence.The following options are available:PropertyDescriptionTypeDefaultVersionextraCommonPropsDefine extra properties to the component{ [key: string]: any }{}scriptUrlThe URL generated by iconfont.cn project. Support string[] after @ant-design/icons@4.1.0string | string[]-The property scriptUrl should be set to import the SVG sprite symbols.See iconfont.cn documents to learn about how to generate scriptUrl.Custom SVG Icon#You can import SVG icon as a react component by using webpack and @svgr/webpack. @svgr/webpack''s options reference.// webpack.config.js
+	{
+	  test: /\.svg(\?v=\d+\.\d+\.\d+)?$/,
+	  use: [
+	    {
+	      loader: ''babel-loader'',
+	    },
+	    {
+	      loader: ''@svgr/webpack'',
+	      options: {
+	        babel: false,
+	        icon: true,
+	      },
+	    },
+	  ],
+	}import Icon from ''@ant-design/icons'';
+	import MessageSvg from ''path/to/message.svg''; // path to your ''*.svg'' file.
+	// in create-react-app:
+	// import { ReactComponent as MessageSvg } from ''path/to/message.svg'';
+	
+	ReactDOM.render(<Icon component={MessageSvg} />, mountNode);The following properties are available for the component:PropertyDescriptionTypeReadonlyVersionclassNameThe computed class name of the svg elementstring-fillDefine the color used to paint the svg elementstringcurrentColorheightThe height of the svg elementstring | number1emstyleThe computed style of the svg elementCSSProperties-widthThe width of the svg elementstring | number1emButtonTypographyResourcesAnt Design ChartsAnt Design ProAnt Design Pro ComponentsAnt Design MobileAnt Design Landing-Landing TemplatesScaffolds-Scaffold MarketUmi-React Application FrameworkDumi-Component doc generatorqiankun-Micro-Frontends Frameworkahooks-React Hooks LibraryAnt Motion-Motion SolutionChina Mirror 🇨🇳CommunityAwesome Ant DesignMediumTwitterAnt Design BlogExperience Cloud BlogSEE Conf-Experience Tech ConferenceHelpGitHubChange LogFAQBug ReportIssuesDiscussionsStackOverflowSegmentFaultMore ProductsYuQue-Write your document as a teamAntV-Data VisualizationEgg-Enterprise Node.js FrameworkKitchen-Sketch ToolkitAnt Financial Experience TechChange theme colorMade with ❤ by XTech
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	')
+	        RETURNING id;
+	        
+2023-12-15 06:54:41.319 GMT [97139] ERROR:  25P02: current transaction is aborted, commands ignored until end of transaction block
+2023-12-15 06:54:41.319 GMT [97139] LOCATION:  exec_simple_query, postgres.c:1116
+2023-12-15 06:54:41.319 GMT [97139] STATEMENT:  
+	        INSERT INTO scanned_documents (href, text_content)
+	        VALUES ('https://4x.ant.design/components/spin/', '
+	
+	
+	
+	
+	
+	
+	 Spin - Ant Design
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Ant DesignDesignDocsComponentsResources4.24.15中文RTLMoreStarComponents OverviewGeneralButtonIconTypographyLayoutDividerGridLayoutSpaceNavigationAffixBreadcrumbDropdownMenuPageHeaderPaginationStepsData EntryAutoCompleteCascaderCheckboxDatePickerFormInputInputNumberMentionsRadioRateSelectSliderSwitchTimePickerTransferTreeSelectUploadData DisplayAvatarBadgeCalendarCardCarouselCollapseCommentDescriptionsEmptyImageListPopoverSegmentedStatisticTableTabsTagTimelineTooltipTreeFeedbackAlertDrawerMessageModalNotificationPopconfirmProgressResultSkeletonSpinOtherAnchorBackTopConfigProviderbasic UsageSizeInside a containerEmbedded modeCustomized descriptiondelayCustom spinning indicatorAPISpinA spinner for displaying loading state of a page or a section.When To Use#When part of the page is waiting for asynchronous data or during a rendering process, an appropriate loading animation can effectively alleviate users'' inquietude.Examplesbasic UsageA simple loading status.TypeScriptJavaScriptimport { Spin } from ''antd'';
+	import React from ''react'';
+	
+	const App: React.FC = () => <Spin />;
+	
+	export default App;Inside a containerSpin in a container.TypeScriptJavaScriptimport { Spin } from ''antd'';
+	import React from ''react'';
+	
+	const App: React.FC = () => (
+	  <div className="example">
+	    <Spin />
+	  </div>
+	);
+	
+	export default App;.example {
+	  margin: 20px 0;
+	  margin-bottom: 20px;
+	  padding: 30px 50px;
+	  text-align: center;
+	  background: rgba(0, 0, 0, 0.05);
+	  border-radius: 4px;
+	}Loading...Alert message titleFurther details about the context of this alert.Customized descriptionCustomized description content.TypeScriptJavaScriptimport { Alert, Spin } from ''antd'';
+	import React from ''react'';
+	
+	const App: React.FC = () => (
+	  <Spin tip="Loading...">
+	    <Alert
+	      message="Alert message title"
+	      description="Further details about the context of this alert."
+	      type="info"
+	    />
+	  </Spin>
+	);
+	
+	export default App;Custom spinning indicatorUse custom loading indicator.TypeScriptJavaScriptimport { LoadingOutlined } from ''@ant-design/icons'';
+	import { Spin } from ''antd'';
+	import React from ''react'';
+	
+	const antIcon = <LoadingOutlined style={{ fontSize: 24 }} spin />;
+	
+	const App: React.FC = () => <Spin indicator={antIcon} />;
+	
+	export default App;SizeA small Spin is used for loading text, default sized Spin for loading a card-level block, and large Spin used for loading a page.TypeScriptJavaScriptimport { Space, Spin } from ''antd'';
+	import React from ''react'';
+	
+	const App: React.FC = () => (
+	  <Space size="middle">
+	    <Spin size="small" />
+	    <Spin />
+	    <Spin size="large" />
+	  </Space>
+	);
+	
+	export default App;Alert message titleFurther details about the context of this alert.Loading state：Embedded modeEmbedding content into Spin will set it into loading state.TypeScriptJavaScriptimport { Alert, Spin, Switch } from ''antd'';
+	import React, { useState } from ''react'';
+	
+	const App: React.FC = () => {
+	  const [loading, setLoading] = useState(false);
+	
+	  const toggle = (checked: boolean) => {
+	    setLoading(checked);
+	  };
+	
+	  return (
+	    <div>
+	      <Spin spinning={loading}>
+	        <Alert
+	          message="Alert message title"
+	          description="Further details about the context of this alert."
+	          type="info"
+	        />
+	      </Spin>
+	      <div style={{ marginTop: 16 }}>
+	        Loading state：
+	        <Switch checked={loading} onChange={toggle} />
+	      </div>
+	    </div>
+	  );
+	};
+	
+	export default App;Alert message titleFurther details about the context of this alert.Loading state：delaySpecifies a delay for loading state. If spinning ends during delay, loading status won''t appear.TypeScriptJavaScriptimport { Alert, Spin, Switch } from ''antd'';
+	import React, { useState } from ''react'';
+	
+	const App: React.FC = () => {
+	  const [loading, setLoading] = useState(false);
+	
+	  const toggle = (checked: boolean) => {
+	    setLoading(checked);
+	  };
+	  const container = (
+	    <Alert
+	      message="Alert message title"
+	      description="Further details about the context of this alert."
+	      type="info"
+	    />
+	  );
+	
+	  return (
+	    <div>
+	      <Spin spinning={loading} delay={500}>
+	        {container}
+	      </Spin>
+	      <div style={{ marginTop: 16 }}>
+	        Loading state：
+	        <Switch checked={loading} onChange={toggle} />
+	      </div>
+	    </div>
+	  );
+	};
+	
+	export default App;API#PropertyDescriptionTypeDefaultdelaySpecifies a delay in milliseconds for loading state (prevent flush)number (milliseconds)-indicatorReact node of the spinning indicatorReactNode-sizeThe size of Spin, options: small, default and largestringdefaultspinningWhether Spin is visiblebooleantruetipCustomize description content when Spin has childrenReactNode-wrapperClassNameThe className of wrapper when Spin has childrenstring-Static Method#Spin.setDefaultIndicator(indicator: ReactNode)You can define default spin element globally.SkeletonAnchorResourcesAnt Design ChartsAnt Design ProAnt Design Pro ComponentsAnt Design MobileAnt Design Landing-Landing TemplatesScaffolds-Scaffold MarketUmi-React Application FrameworkDumi-Component doc generatorqiankun-Micro-Frontends Frameworkahooks-React Hooks LibraryAnt Motion-Motion SolutionChina Mirror 🇨🇳CommunityAwesome Ant DesignMediumTwitterAnt Design BlogExperience Cloud BlogSEE Conf-Experience Tech ConferenceHelpGitHubChange LogFAQBug ReportIssuesDiscussionsStackOverflowSegmentFaultMore ProductsYuQue-Write your document as a teamAntV-Data VisualizationEgg-Enterprise Node.js FrameworkKitchen-Sketch ToolkitAnt Financial Experience TechChange theme colorMade with ❤ by XTech
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	')
+	        RETURNING id;
+	        
+2023-12-15 06:54:42.628 GMT [97139] ERROR:  25P02: current transaction is aborted, commands ignored until end of transaction block
+2023-12-15 06:54:42.628 GMT [97139] LOCATION:  exec_simple_query, postgres.c:1116
+2023-12-15 06:54:42.628 GMT [97139] STATEMENT:  
+	        INSERT INTO scanned_documents (href, text_content)
+	        VALUES ('https://4x.ant.design/components/config-provider/', '
+	
+	
+	
+	
+	
+	
+	 ConfigProvider - Ant Design
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Ant DesignDesignDocsComponentsResources4.24.15中文RTLMoreStarComponents OverviewGeneralButtonIconTypographyLayoutDividerGridLayoutSpaceNavigationAffixBreadcrumbDropdownMenuPageHeaderPaginationStepsData EntryAutoCompleteCascaderCheckboxDatePickerFormInputInputNumberMentionsRadioRateSelectSliderSwitchTimePickerTransferTreeSelectUploadData DisplayAvatarBadgeCalendarCardCarouselCollapseCommentDescriptionsEmptyImageListPopoverSegmentedStatisticTableTabsTagTimelineTooltipTreeFeedbackAlertDrawerMessageModalNotificationPopconfirmProgressResultSkeletonSpinOtherAnchorBackTopConfigProviderLocaleDirectionComponent sizeGlobal ThemeAPIConfigProviderConfigProvider provides a uniform configuration support for components.Usage#This component provides a configuration to all React components underneath itself via the context API. In the render tree all components will have access to the provided config.import { ConfigProvider } from ''antd'';
+	
+	// ...
+	
+	export default () => (
+	  <ConfigProvider direction="rtl">
+	    <App />
+	  </ConfigProvider>
+	);Content Security Policy#Some components use dynamic style to support wave effect. You can config csp prop if Content Security Policy (CSP) is enabled:<ConfigProvider csp={{ nonce: ''YourNonceCode'' }}>
+	  <Button>My Button</Button>
+	</ConfigProvider>ExamplesChange locale of components: English中文1234510 / pageShow ModalShow infoShow confirmClick to confirm0 itemNo data0 itemNo data2023NovMonthYearSuMoTuWeThFrSa293031010203040506070809101112131415161718192021222324252627282930010203040506070809NameAgeNo dataLocaleComponents which need localization support are listed here, you can toggle the language in the demo.TypeScriptJavaScriptimport type { RadioChangeEvent } from ''antd'';
+	import {
+	  Button,
+	  Calendar,
+	  ConfigProvider,
+	  DatePicker,
+	  Modal,
+	  Pagination,
+	  Popconfirm,
+	  Radio,
+	  Select,
+	  Table,
+	  TimePicker,
+	  Transfer,
+	} from ''antd'';
+	import enUS from ''antd/es/locale/en_US'';
+	import zhCN from ''antd/es/locale/zh_CN'';
+	import moment from ''moment'';
+	import ''moment/locale/zh-cn'';
+	import React, { useState } from ''react'';
+	
+	moment.locale(''en'');
+	
+	const { Option } = Select;
+	const { RangePicker } = DatePicker;
+	
+	const columns = [
+	  {
+	    title: ''Name'',
+	    dataIndex: ''name'',
+	    filters: [
+	      {
+	        text: ''filter1'',
+	        value: ''filter1'',
+	      },
+	    ],
+	  },
+	  {
+	    title: ''Age'',
+	    dataIndex: ''age'',
+	  },
+	];
+	
+	const Page = () => {
+	  const [open, setOpen] = useState(false);
+	
+	  const showModal = () => {
+	    setOpen(true);
+	  };
+	
+	  const hideModal = () => {
+	    setOpen(false);
+	  };
+	
+	  const info = () => {
+	    Modal.info({
+	      title: ''some info'',
+	      content: ''some info'',
+	    });
+	  };
+	
+	  const confirm = () => {
+	    Modal.confirm({
+	      title: ''some info'',
+	      content: ''some info'',
+	    });
+	  };
+	
+	  return (
+	    <div className="locale-components">
+	      <div className="example">
+	        <Pagination defaultCurrent={1} total={50} showSizeChanger />
+	      </div>
+	      <div className="example">
+	        <Select showSearch style={{ width: 200 }}>
+	          <Option value="jack">jack</Option>
+	          <Option value="lucy">lucy</Option>
+	        </Select>
+	        <DatePicker />
+	        <TimePicker />
+	        <RangePicker style={{ width: 200 }} />
+	      </div>
+	      <div className="example">
+	        <Button type="primary" onClick={showModal}>
+	          Show Modal
+	        </Button>
+	        <Button onClick={info}>Show info</Button>
+	        <Button onClick={confirm}>Show confirm</Button>
+	        <Popconfirm title="Question?">
+	          <a href="#">Click to confirm</a>
+	        </Popconfirm>
+	      </div>
+	      <div className="example">
+	        <Transfer dataSource={[]} showSearch targetKeys={[]} />
+	      </div>
+	      <div className="site-config-provider-calendar-wrapper">
+	        <Calendar fullscreen={false} value={moment()} />
+	      </div>
+	      <div className="example">
+	        <Table dataSource={[]} columns={columns} />
+	      </div>
+	      <Modal title="Locale Modal" open={open} onCancel={hideModal}>
+	        <p>Locale Modal</p>
+	      </Modal>
+	    </div>
+	  );
+	};
+	
+	const App: React.FC = () => {
+	  const [locale, setLocal] = useState(enUS);
+	
+	  const changeLocale = (e: RadioChangeEvent) => {
+	    const localeValue = e.target.value;
+	    setLocal(localeValue);
+	    if (!localeValue) {
+	      moment.locale(''en'');
+	    } else {
+	      moment.locale(''zh-cn'');
+	    }
+	  };
+	
+	  return (
+	    <div>
+	      <div className="change-locale">
+	        <span style={{ marginRight: 16 }}>Change locale of components: </span>
+	        <Radio.Group value={locale} onChange={changeLocale}>
+	          <Radio.Button key="en" value={enUS}>
+	            English
+	          </Radio.Button>
+	          <Radio.Button key="cn" value={zhCN}>
+	            中文
+	          </Radio.Button>
+	        </Radio.Group>
+	      </div>
+	      <ConfigProvider locale={locale}>
+	        <Page
+	          key={locale ? locale.locale : ''en'' /* Have to refresh for production environment */}
+	        />
+	      </ConfigProvider>
+	    </div>
+	  );
+	};
+	
+	export default App;.site-config-provider-calendar-wrapper {
+	  width: 319px;
+	  border: 1px solid #d9d9d9;
+	  border-radius: 2px;
+	}
+	
+	.locale-components {
+	  padding-top: 16px;
+	  border-top: 1px solid #d9d9d9;
+	}
+	
+	.code-box-demo .example {
+	  margin: 16px 0;
+	}
+	
+	.code-box-demo .example > * {
+	  margin-right: 8px;
+	}
+	
+	.change-locale {
+	  margin-bottom: 16px;
+	}Change direction of components: LTRRTLCascader exampleیک مورد انتخاب کنید     With search:Select an itemSwitch example      Radio Group exampleتهراناصفهانفارسخوزستانButton exampleDownloadDownloadBackwardForwardLoadingLoadingTree exampleparent 1parent 1-0leafleafparent 1-1sssInput (Input Group) exampleOption1SearchHttp://.comSelect exampleمورچه مورچهمورچهSelect a personTreeSelect examplePlease selectModal exampleOpen ModalSteps exampleFinishedThis is a description.In ProgressThis is a description.WaitingThis is a description.1Step 1This is a description.2Step 2This is a description.3Step 3This is a description.Rate example* Note: Half star not implemented in RTL direction, it will be supported after rc-rate implement rtl support.Badge example5Pagination example12345•••5010 / pageGrid System example* Note: Every calculation in RTL grid system is from right side (offset, push, etc.)col-8col-8col-6 col-offset-6col-6 col-offset-6col-12 col-offset-6col-18 col-push-6col-6 col-pull-18DirectionComponents which support rtl direction are listed here, you can toggle the direction in the demo.TypeScriptJavaScriptimport {
+	  DownloadOutlined,
+	  LeftOutlined,
+	  MinusOutlined,
+	  PlusOutlined,
+	  RightOutlined,
+	  SearchOutlined as SearchIcon,
+	  SmileOutlined,
+	} from ''@ant-design/icons'';
+	import type { RadioChangeEvent } from ''antd'';
+	import {
+	  Badge,
+	  Button,
+	  Cascader,
+	  Col,
+	  ConfigProvider,
+	  Divider,
+	  Input,
+	  InputNumber,
+	  Modal,
+	  Pagination,
+	  Radio,
+	  Rate,
+	  Row,
+	  Select,
+	  Steps,
+	  Switch,
+	  Tree,
+	  TreeSelect,
+	} from ''antd'';
+	import type { DirectionType } from ''antd/es/config-provider'';
+	import React, { useState } from ''react'';
+	
+	const InputGroup = Input.Group;
+	const ButtonGroup = Button.Group;
+	const { Option } = Select;
+	const { TreeNode } = Tree;
+	const { Search } = Input;
+	
+	const cascaderOptions = [
+	  {
+	    value: ''tehran'',
+	    label: ''تهران'',
+	    children: [
+	      {
+	        value: ''tehran-c'',
+	        label: ''تهران'',
+	        children: [
+	          {
+	            value: ''saadat-abad'',
+	            label: ''سعادت آیاد'',
+	          },
+	        ],
+	      },
+	    ],
+	  },
+	  {
+	    value: ''ardabil'',
+	    label: ''اردبیل'',
+	    children: [
+	      {
+	        value: ''ardabil-c'',
+	        label: ''اردبیل'',
+	        children: [
+	          {
+	            value: ''primadar'',
+	            label: ''پیرمادر'',
+	          },
+	        ],
+	      },
+	    ],
+	  },
+	  {
+	    value: ''gilan'',
+	    label: ''گیلان'',
+	    children: [
+	      {
+	        value: ''rasht'',
+	        label: ''رشت'',
+	        children: [
+	          {
+	            value: ''district-3'',
+	            label: ''منطقه ۳'',
+	          },
+	        ],
+	      },
+	    ],
+	  },
+	];
+	type Placement = ''bottomLeft'' | ''bottomRight'' | ''topLeft'' | ''topRight'';
+	
+	const Page: React.FC<{ popupPlacement: Placement }> = ({ popupPlacement }) => {
+	  const [currentStep, setCurrentStep] = useState(0);
+	  const [modalOpen, setModalOpen] = useState(false);
+	  const [badgeCount, setBadgeCount] = useState(5);
+	  const [showBadge, setShowBadge] = useState(true);
+	
+	  const selectBefore = (
+	    <Select defaultValue="Http://" style={{ width: 90 }}>
+	      <Option value="Http://">Http://</Option>
+	      <Option value="Https://">Https://</Option>
+	    </Select>
+	  );
+	
+	  const selectAfter = (
+	    <Select defaultValue=".com" style={{ width: 80 }}>
+	      <Option value=".com">.com</Option>
+	      <Option value=".jp">.jp</Option>
+	      <Option value=".cn">.cn</Option>
+	      <Option value=".org">.org</Option>
+	    </Select>
+	  );
+	
+	  // ==== Cascader ====
+	  const cascaderFilter = (inputValue: string, path: { label: string }[]) =>
+	    path.some(option => option.label.toLowerCase().indexOf(inputValue.toLowerCase()) > -1);
+	
+	  const onCascaderChange = (value: any) => {
+	    console.log(value);
+	  };
+	  // ==== End Cascader ====
+	
+	  // ==== Modal ====
+	  const showModal = () => {
+	    setModalOpen(true);
+	  };
+	
+	  const handleOk = (e: React.MouseEvent<HTMLElement>) => {
+	    console.log(e);
+	    setModalOpen(false);
+	  };
+	
+	  const handleCancel = (e: React.MouseEvent<HTMLElement>) => {
+	    console.log(e);
+	    setModalOpen(false);
+	  };
+	
+	  // ==== End Modal ====
+	
+	  const onStepsChange = (newCurrentStep: number) => {
+	    console.log(''onChange:'', newCurrentStep);
+	    setCurrentStep(newCurrentStep);
+	  };
+	
+	  // ==== Badge ====
+	
+	  const increaseBadge = () => {
+	    setBadgeCount(badgeCount + 1);
+	  };
+	
+	  const declineBadge = () => {
+	    let newBadgeCount = badgeCount - 1;
+	    if (newBadgeCount < 0) {
+	      newBadgeCount = 0;
+	    }
+	    setBadgeCount(newBadgeCount);
+	  };
+	
+	  const onChangeBadge = (checked: boolean) => {
+	    setShowBadge(checked);
+	  };
+	  // ==== End Badge ====
+	
+	  return (
+	    <div className="direction-components">
+	      <Row>
+	        <Col span={24}>
+	          <Divider orientation="left">Cascader example</Divider>
+	          <Cascader
+	            suffixIcon={<SearchIcon />}
+	            options={cascaderOptions}
+	            onChange={onCascaderChange}
+	            placeholder="یک مورد انتخاب کنید"
+	            popupPlacement={popupPlacement}
+	          />
+	          &nbsp;&nbsp;&nbsp;&nbsp; With search:
+	          <Cascader
+	            suffixIcon={<SmileOutlined />}
+	            options={cascaderOptions}
+	            onChange={onCascaderChange}
+	            placeholder="Select an item"
+	            popupPlacement={popupPlacement}
+	            showSearch={{ filter: cascaderFilter }}
+	          />
+	        </Col>
+	      </Row>
+	      <br />
+	      <Row>
+	        <Col span={12}>
+	          <Divider orientation="left">Switch example</Divider>
+	          &nbsp;&nbsp;
+	          <Switch defaultChecked />
+	          &nbsp;&nbsp;
+	          <Switch loading defaultChecked />
+	          &nbsp;&nbsp;
+	          <Switch size="small" loading />
+	        </Col>
+	        <Col span={12}>
+	          <Divider orientation="left">Radio Group example</Divider>
+	
+	          <Radio.Group defaultValue="c" buttonStyle="solid">
+	            <Radio.Button value="a">تهران</Radio.Button>
+	            <Radio.Button value="b" disabled>
+	              اصفهان
+	            </Radio.Button>
+	            <Radio.Button value="c">فارس</Radio.Button>
+	            <Radio.Button value="d">خوزستان</Radio.Button>
+	          </Radio.Group>
+	        </Col>
+	      </Row>
+	      <br />
+	      <Row>
+	        <Col span={12}>
+	          <Divider orientation="left">Button example</Divider>
+	          <div className="button-demo">
+	            <Button type="primary" icon={<DownloadOutlined />} />
+	            <Button type="primary" shape="circle" icon={<DownloadOutlined />} />
+	            <Button type="primary" shape="round" icon={<DownloadOutlined />} />
+	            <Button type="primary" shape="round" icon={<DownloadOutlined />}>
+	              Download
+	            </Button>
+	            <Button type="primary" icon={<DownloadOutlined />}>
+	              Download
+	            </Button>
+	            <br />
+	            <Button.Group>
+	              <Button type="primary">
+	                <LeftOutlined />
+	                Backward
+	              </Button>
+	              <Button type="primary">
+	                Forward
+	                <RightOutlined />
+	              </Button>
+	            </Button.Group>
+	            <Button type="primary" loading>
+	              Loading
+	            </Button>
+	            <Button type="primary" size="small" loading>
+	              Loading
+	            </Button>
+	          </div>
+	        </Col>
+	        <Col span={12}>
+	          <Divider orientation="left">Tree example</Divider>
+	          <Tree
+	            showLine
+	            checkable
+	            defaultExpandedKeys={[''0-0-0'', ''0-0-1'']}
+	            defaultSelectedKeys={[''0-0-0'', ''0-0-1'']}
+	            defaultCheckedKeys={[''0-0-0'', ''0-0-1'']}
+	          >
+	            <TreeNode title="parent 1" key="0-0">
+	              <TreeNode title="parent 1-0" key="0-0-0" disabled>
+	                <TreeNode title="leaf" key="0-0-0-0" disableCheckbox />
+	                <TreeNode title="leaf" key="0-0-0-1" />
+	              </TreeNode>
+	              <TreeNode title="parent 1-1" key="0-0-1">
+	                <TreeNode title={<span style={{ color: ''#1890ff'' }}>sss</span>} key="0-0-1-0" />
+	              </TreeNode>
+	            </TreeNode>
+	          </Tree>
+	        </Col>
+	      </Row>
+	      <br />
+	      <Row>
+	        <Col span={24}>
+	          <Divider orientation="left">Input (Input Group) example</Divider>
+	          <InputGroup size="large">
+	            <Row gutter={8}>
+	              <Col span={5}>
+	                <Input defaultValue="0571" />
+	              </Col>
+	              <Col span={8}>
+	                <Input defaultValue="26888888" />
+	              </Col>
+	            </Row>
+	          </InputGroup>
+	          <br />
+	          <InputGroup compact>
+	            <Input style={{ width: ''20%'' }} defaultValue="0571" />
+	            <Input style={{ width: ''30%'' }} defaultValue="26888888" />
+	          </InputGroup>
+	          <br />
+	          <InputGroup compact>
+	            <Select defaultValue="Option1">
+	              <Option value="Option1">Option1</Option>
+	              <Option value="Option2">Option2</Option>
+	            </Select>
+	            <Input style={{ width: ''50%'' }} defaultValue="input content" />
+	            <InputNumber />
+	          </InputGroup>
+	          <br />
+	          <Search placeholder="input search text" enterButton="Search" size="large" />
+	          <br />
+	          <br />
+	          <div style={{ marginBottom: 16 }}>
+	            <Input addonBefore={selectBefore} addonAfter={selectAfter} defaultValue="mysite" />
+	          </div>
+	          <br />
+	          <Row>
+	            <Col span={12}>
+	              <Divider orientation="left">Select example</Divider>
+	              <Select mode="multiple" defaultValue="مورچه" style={{ width: 120 }}>
+	                <Option value="jack">Jack</Option>
+	                <Option value="مورچه">مورچه</Option>
+	                <Option value="disabled" disabled>
+	                  Disabled
+	                </Option>
+	                <Option value="Yiminghe">yiminghe</Option>
+	              </Select>
+	              <Select defaultValue="مورچه" style={{ width: 120 }} disabled>
+	                <Option value="مورچه">مورچه</Option>
+	              </Select>
+	              <Select defaultValue="مورچه" style={{ width: 120 }} loading>
+	                <Option value="مورچه">مورچه</Option>
+	              </Select>
+	              <Select
+	                showSearch
+	                style={{ width: 200 }}
+	                placeholder="Select a person"
+	                optionFilterProp="children"
+	                filterOption={(input, option) =>
+	                  option?.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
+	                }
+	              >
+	                <Option value="jack">Jack</Option>
+	                <Option value="سعید">سعید</Option>
+	                <Option value="tom">Tom</Option>
+	              </Select>
+	            </Col>
+	            <Col span={12}>
+	              <Divider orientation="left">TreeSelect example</Divider>
+	              <div>
+	                <TreeSelect
+	                  showSearch
+	                  style={{ width: ''100%'' }}
+	                  dropdownStyle={{ maxHeight: 400, overflow: ''auto'' }}
+	                  placeholder="Please select"
+	                  allowClear
+	                  treeDefaultExpandAll
+	                >
+	                  <TreeNode title="parent 1" key="0-1">
+	                    <TreeNode title="parent 1-0" key="0-1-1">
+	                      <TreeNode title="my leaf" key="random" />
+	                      <TreeNode title="your leaf" key="random1" />
+	                    </TreeNode>
+	                    <TreeNode title="parent 1-1" key="random2">
+	                      <TreeNode title={<b style={{ color: ''#08c'' }}>sss</b>} key="random3" />
+	                    </TreeNode>
+	                  </TreeNode>
+	                </TreeSelect>
+	              </div>
+	            </Col>
+	          </Row>
+	          <br />
+	          <Row>
+	            <Col span={24}>
+	              <Divider orientation="left">Modal example</Divider>
+	              <div>
+	                <Button type="primary" onClick={showModal}>
+	                  Open Modal
+	                </Button>
+	                <Modal title="پنچره ساده" open={modalOpen} onOk={handleOk} onCancel={handleCancel}>
+	                  <p>نگاشته‌های خود را اینجا قراردهید</p>
+	                  <p>نگاشته‌های خود را اینجا قراردهید</p>
+	                  <p>نگاشته‌های خود را اینجا قراردهید</p>
+	                </Modal>
+	              </div>
+	            </Col>
+	          </Row>
+	          <br />
+	          <Row>
+	            <Col span={24}>
+	              <Divider orientation="left">Steps example</Divider>
+	              <div>
+	                <Steps
+	                  progressDot
+	                  current={currentStep}
+	                  items={[
+	                    {
+	                      title: ''Finished'',
+	                      description: ''This is a description.'',
+	                    },
+	                    {
+	                      title: ''In Progress'',
+	                      description: ''This is a description.'',
+	                    },
+	                    {
+	                      title: ''Waiting'',
+	                      description: ''This is a description.'',
+	                    },
+	                  ]}
+	                />
+	                <br />
+	                <Steps
+	                  current={currentStep}
+	                  onChange={onStepsChange}
+	                  items={[
+	                    {
+	                      title: ''Step 1'',
+	                      description: ''This is a description.'',
+	                    },
+	                    {
+	                      title: ''Step 2'',
+	                      description: ''This is a description.'',
+	                    },
+	                    {
+	                      title: ''Step 3'',
+	                      description: ''This is a description.'',
+	                    },
+	                  ]}
+	                />
+	              </div>
+	            </Col>
+	          </Row>
+	          <br />
+	          <Row>
+	            <Col span={12}>
+	              <Divider orientation="left">Rate example</Divider>
+	              <div>
+	                <Rate defaultValue={2.5} />
+	                <br />
+	                <strong>* Note:</strong> Half star not implemented in RTL direction, it will be
+	                supported after <a href="https://github.com/react-component/rate">rc-rate</a>{'' ''}
+	                implement rtl support.
+	              </div>
+	            </Col>
+	            <Col span={12}>
+	              <Divider orientation="left">Badge example</Divider>
+	              <div>
+	                <div>
+	                  <Badge count={badgeCount}>
+	                    <a href="#" className="head-example" />
+	                  </Badge>
+	                  <ButtonGroup>
+	                    <Button onClick={declineBadge}>
+	                      <MinusOutlined />
+	                    </Button>
+	                    <Button onClick={increaseBadge}>
+	                      <PlusOutlined />
+	                    </Button>
+	                  </ButtonGroup>
+	                </div>
+	                <div style={{ marginTop: 10 }}>
+	                  <Badge dot={showBadge}>
+	                    <a href="#" className="head-example" />
+	                  </Badge>
+	                  <Switch onChange={onChangeBadge} checked={showBadge} />
+	                </div>
+	              </div>
+	            </Col>
+	          </Row>
+	        </Col>
+	      </Row>
+	
+	      <br />
+	      <br />
+	      <Row>
+	        <Col span={24}>
+	          <Divider orientation="left">Pagination example</Divider>
+	          <Pagination showSizeChanger defaultCurrent={3} total={500} />
+	        </Col>
+	      </Row>
+	      <br />
+	      <Row>
+	        <Col span={24}>
+	          <Divider orientation="left">Grid System example</Divider>
+	          <div className="grid-demo">
+	            <div className="code-box-demo">
+	              <p>
+	                <strong>* Note:</strong> Every calculation in RTL grid system is from right side
+	                (offset, push, etc.)
+	              </p>
+	              <Row>
+	                <Col span={8}>col-8</Col>
+	                <Col span={8} offset={8}>
+	                  col-8
+	                </Col>
+	              </Row>
+	              <Row>
+	                <Col span={6} offset={6}>
+	                  col-6 col-offset-6
+	                </Col>
+	                <Col span={6} offset={6}>
+	                  col-6 col-offset-6
+	                </Col>
+	              </Row>
+	              <Row>
+	                <Col span={12} offset={6}>
+	                  col-12 col-offset-6
+	                </Col>
+	              </Row>
+	              <Row>
+	                <Col span={18} push={6}>
+	                  col-18 col-push-6
+	                </Col>
+	                <Col span={6} pull={18}>
+	                  col-6 col-pull-18
+	                </Col>
+	              </Row>
+	            </div>
+	          </div>
+	        </Col>
+	      </Row>
+	    </div>
+	  );
+	};
+	
+	const App: React.FC = () => {
+	  const [direction, setDirection] = useState<DirectionType>(''ltr'');
+	  const [popupPlacement, setPopupPlacement] = useState<Placement>(''bottomLeft'');
+	
+	  const changeDirection = (e: RadioChangeEvent) => {
+	    const directionValue = e.target.value;
+	    setDirection(directionValue);
+	    if (directionValue === ''rtl'') {
+	      setPopupPlacement(''bottomRight'');
+	    } else {
+	      setPopupPlacement(''bottomLeft'');
+	    }
+	  };
+	
+	  return (
+	    <>
+	      <div style={{ marginBottom: 16 }}>
+	        <span style={{ marginRight: 16 }}>Change direction of components: </span>
+	        <Radio.Group defaultValue="ltr" onChange={changeDirection}>
+	          <Radio.Button key="ltr" value="ltr">
+	            LTR
+	          </Radio.Button>
+	          <Radio.Button key="rtl" value="rtl">
+	            RTL
+	          </Radio.Button>
+	        </Radio.Group>
+	      </div>
+	      <ConfigProvider direction={direction}>
+	        <Page popupPlacement={popupPlacement} />
+	      </ConfigProvider>
+	    </>
+	  );
+	};
+	
+	export default App;.button-demo .ant-btn,
+	.button-demo .ant-btn-group {
+	  margin-right: 8px;
+	  margin-bottom: 12px;
+	}
+	.button-demo .ant-btn-group > .ant-btn,
+	.button-demo .ant-btn-group > span > .ant-btn {
+	  margin-right: 0;
+	  margin-left: 0;
+	}
+	
+	.head-example {
+	  display: inline-block;
+	  width: 42px;
+	  height: 42px;
+	  vertical-align: middle;
+	  background: #eee;
+	  border-radius: 4px;
+	}
+	
+	.ant-badge:not(.ant-badge-not-a-wrapper) {
+	  margin-right: 20px;
+	}
+	.ant-badge-rtl:not(.ant-badge-not-a-wrapper) {
+	  margin-right: 0;
+	  margin-left: 20px;
+	}SmallMiddleLargeTab 1Tab 2Tab 3Content of Tab Pane 1demoButtonCardNameAgeJohn Brown32Jim Green42Joe Black321Component sizeConfig component default size.TypeScriptJavaScriptimport {
+	  Button,
+	  Card,
+	  ConfigProvider,
+	  DatePicker,
+	  Divider,
+	  Input,
+	  Radio,
+	  Select,
+	  Table,
+	  Tabs,
+	} from ''antd'';
+	import type { SizeType } from ''antd/es/config-provider/SizeContext'';
+	import React, { useState } from ''react'';
+	
+	const { TabPane } = Tabs;
+	
+	const App: React.FC = () => {
+	  const [componentSize, setComponentSize] = useState<SizeType>(''small'');
+	
+	  return (
+	    <div>
+	      <Radio.Group
+	        value={componentSize}
+	        onChange={e => {
+	          setComponentSize(e.target.value);
+	        }}
+	      >
+	        <Radio.Button value="small">Small</Radio.Button>
+	        <Radio.Button value="middle">Middle</Radio.Button>
+	        <Radio.Button value="large">Large</Radio.Button>
+	      </Radio.Group>
+	      <Divider />
+	      <ConfigProvider componentSize={componentSize}>
+	        <div className="example">
+	          <Input />
+	        </div>
+	        <div className="example">
+	          <Tabs defaultActiveKey="1">
+	            <TabPane tab="Tab 1" key="1">
+	              Content of Tab Pane 1
+	            </TabPane>
+	            <TabPane tab="Tab 2" key="2">
+	              Content of Tab Pane 2
+	            </TabPane>
+	            <TabPane tab="Tab 3" key="3">
+	              Content of Tab Pane 3
+	            </TabPane>
+	          </Tabs>
+	        </div>
+	        <div className="example">
+	          <Input.Search allowClear />
+	        </div>
+	        <div className="example">
+	          <Input.TextArea allowClear />
+	        </div>
+	        <div className="example">
+	          <Select defaultValue="demo" options={[{ value: ''demo'' }]} />
+	        </div>
+	        <div className="example">
+	          <DatePicker />
+	        </div>
+	        <div className="example">
+	          <DatePicker.RangePicker />
+	        </div>
+	        <div className="example">
+	          <Button>Button</Button>
+	        </div>
+	        <div className="example">
+	          <Card title="Card">
+	            <Table
+	              columns={[
+	                { title: ''Name'', dataIndex: ''name'' },
+	                { title: ''Age'', dataIndex: ''age'' },
+	              ]}
+	              dataSource={[
+	                {
+	                  key: ''1'',
+	                  name: ''John Brown'',
+	                  age: 32,
+	                },
+	                {
+	                  key: ''2'',
+	                  name: ''Jim Green'',
+	                  age: 42,
+	                },
+	                {
+	                  key: ''3'',
+	                  name: ''Joe Black'',
+	                  age: 32,
+	                },
+	              ]}
+	            />
+	          </Card>
+	        </div>
+	      </ConfigProvider>
+	    </div>
+	  );
+	};
+	
+	export default App;hexrgbavar(`--ant-primary-color`)hexrgbavar(`--ant-error-color`)hexrgbavar(`--ant-warning-color`)hexrgbavar(`--ant-success-color`)hexrgbavar(`--ant-info-color`)PrimaryDefaultDashedTextLinkPrimaryDefaultDashedTextLinkPrimaryDefaultDashedPrimaryDefaultDashedText (success)Text(warning)Text(danger)LinkTextHover meMailSubmenuMailSubmenuMailSubmenuMailSubmenu12345•••5010 / pageGo toPageFinishedThis is a description.2In ProgressLeft 00:00:08This is a description.3WaitingThis is a description.FinishedYou can hover on the dot.In ProgressYou can hover on the dot.ErrorYou can hover on the dot.WaitingYou can hover on the dot.     CheckboxBambooLightLittlearticleappprojectMoreKeyBambooLightLittle1Tab 1Tab 2Tab 3Content of Tab Pane 1successprocessingerrorwarningdefaultCheckableTagCreate a services site 2015-09-01Solve initial network problems 2015-09-01Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.LittleLightBambooSuccess TextInfo TextWarning TextError Text30%75%1/19 itemscontent1content2content3content4content5content6content7content8content9content10content11content12content13content14content15content16content17content18content201 itemcontent19Global ThemeModify global theme color by css variable which IE not support. Css variable depends on the design, it may adjust so please do not directly use it. You can go to other components page for more detail style. Check this to view detail.TypeScriptJavaScriptimport {
+	  ClockCircleOutlined,
+	  DownOutlined,
+	  MailOutlined,
+	  SettingOutlined,
+	} from ''@ant-design/icons'';
+	import type { SpaceProps, TreeSelectProps } from ''antd'';
+	import {
+	  Alert,
+	  Button,
+	  Card,
+	  Checkbox,
+	  Col,
+	  ConfigProvider,
+	  DatePicker,
+	  Divider,
+	  Dropdown,
+	  Form,
+	  Input,
+	  InputNumber,
+	  Mentions,
+	  Menu,
+	  Pagination,
+	  Progress,
+	  Radio,
+	  Row,
+	  Select,
+	  Slider,
+	  Space,
+	  Spin,
+	  Steps,
+	  Switch,
+	  Table,
+	  Tabs,
+	  Tag,
+	  Timeline,
+	  TimePicker,
+	  Transfer,
+	  Tree,
+	  TreeSelect,
+	  Typography,
+	} from ''antd'';
+	import React, { useState } from ''react'';
+	import { SketchPicker } from ''react-color'';
+	
+	const SplitSpace: React.FC<SpaceProps> = props => (
+	  <Space split={<Divider type="vertical" />} size={4} {...props} />
+	);
+	
+	const menuItems = [
+	  {
+	    key: ''mail'',
+	    icon: <MailOutlined />,
+	    label: ''Mail'',
+	  },
+	  {
+	    key: ''SubMenu'',
+	    icon: <SettingOutlined />,
+	    label: ''Submenu'',
+	    children: [
+	      {
+	        type: ''group'',
+	        label: ''Item 1'',
+	        children: [
+	          {
+	            key: ''setting:1'',
+	            label: ''Option 1'',
+	          },
+	          {
+	            key: ''setting:2'',
+	            label: ''Option 2'',
+	          },
+	        ],
+	      },
+	    ],
+	  },
+	];
+	
+	const inputProps = {
+	  style: { width: 128 },
+	};
+	
+	const selectProps = {
+	  ...inputProps,
+	  options: [
+	    { value: ''light'', label: ''Light'' },
+	    { value: ''bamboo'', label: ''Bamboo'' },
+	    { value: ''little'', label: ''Little'' },
+	  ],
+	};
+	
+	const treeData = [
+	  {
+	    value: ''little'',
+	    key: ''little'',
+	    label: ''Little'',
+	    title: ''Little'',
+	    children: [
+	      { value: ''light'', key: ''light'', label: ''Light'', title: ''Light'' },
+	      { value: ''bamboo'', key: ''bamboo'', label: ''Bamboo'', title: ''Bamboo'' },
+	    ],
+	  },
+	];
+	
+	const treeSelectProps: TreeSelectProps = {
+	  ...inputProps,
+	  treeCheckable: true,
+	  maxTagCount: ''responsive'',
+	  treeData,
+	};
+	
+	const carTabListNoTitle = [
+	  {
+	    key: ''article'',
+	    tab: ''article'',
+	  },
+	  {
+	    key: ''app'',
+	    tab: ''app'',
+	  },
+	  {
+	    key: ''project'',
+	    tab: ''project'',
+	  },
+	];
+	
+	const MyTransfer = () => {
+	  const mockData = [];
+	  for (let i = 0; i < 20; i++) {
+	    mockData.push({
+	      key: i.toString(),
+	      title: `content${i + 1}`,
+	      description: `description of content${i + 1}`,
+	    });
+	  }
+	
+	  return (
+	    <Transfer
+	      dataSource={mockData}
+	      targetKeys={[''18'']}
+	      selectedKeys={[''3'']}
+	      render={item => item.title}
+	    />
+	  );
+	};
+	
+	const App: React.FC = () => {
+	  const [color, setColor] = useState({
+	    primaryColor: ''#1890ff'',
+	    errorColor: ''#ff4d4f'',
+	    warningColor: ''#faad14'',
+	    successColor: ''#52c41a'',
+	    infoColor: ''#1890ff'',
+	  });
+	
+	  const onColorChange = (nextColor: Partial<typeof color>) => {
+	    const mergedNextColor = {
+	      ...color,
+	      ...nextColor,
+	    };
+	    setColor(mergedNextColor);
+	    ConfigProvider.config({
+	      theme: mergedNextColor,
+	    });
+	  };
+	
+	  return (
+	    <Row gutter={16} wrap={false}>
+	      <Col flex="none">
+	        <Space direction="vertical" align="center">
+	          {/* Primary Color */}
+	          <SketchPicker
+	            presetColors={[''#1890ff'', ''#25b864'', ''#ff6f00'']}
+	            color={color.primaryColor}
+	            onChange={({ hex }) => {
+	              onColorChange({
+	                primaryColor: hex,
+	              });
+	            }}
+	          />
+	
+	          <span style={{ color: ''var(--ant-primary-color)'' }}>var(`--ant-primary-color`)</span>
+	
+	          {/* Error Color */}
+	          <SketchPicker
+	            presetColors={[''#ff4d4f'']}
+	            color={color.errorColor}
+	            onChange={({ hex }) => {
+	              onColorChange({
+	                errorColor: hex,
+	              });
+	            }}
+	          />
+	
+	          <span style={{ color: ''var(--ant-error-color)'' }}>var(`--ant-error-color`)</span>
+	
+	          {/* Warning Color */}
+	          <SketchPicker
+	            presetColors={[''#faad14'']}
+	            color={color.warningColor}
+	            onChange={({ hex }) => {
+	              onColorChange({
+	                warningColor: hex,
+	              });
+	            }}
+	          />
+	
+	          <span style={{ color: ''var(--ant-warning-color)'' }}>var(`--ant-warning-color`)</span>
+	
+	          {/* Success Color */}
+	          <SketchPicker
+	            presetColors={[''#52c41a'']}
+	            color={color.successColor}
+	            onChange={({ hex }) => {
+	              onColorChange({
+	                successColor: hex,
+	              });
+	            }}
+	          />
+	
+	          <span style={{ color: ''var(--ant-success-color)'' }}>var(`--ant-success-color`)</span>
+	
+	          {/* Info Color */}
+	          <SketchPicker
+	            presetColors={[''#1890ff'']}
+	            color={color.infoColor}
+	            onChange={({ hex }) => {
+	              onColorChange({
+	                infoColor: hex,
+	              });
+	            }}
+	          />
+	
+	          <span style={{ color: ''var(--ant-info-color)'' }}>var(`--ant-info-color`)</span>
+	        </Space>
+	      </Col>
+	
+	      <Col flex="auto">
+	        <Space direction="vertical" split={<Divider />} style={{ width: ''100%'' }} size={0}>
+	          {/* Primary Button */}
+	          <SplitSpace>
+	            <Button type="primary">Primary</Button>
+	            <Button>Default</Button>
+	            <Button type="dashed">Dashed</Button>
+	            <Button type="text">Text</Button>
+	            <Button type="link">Link</Button>
+	          </SplitSpace>
+	
+	          {/* Danger Button */}
+	          <SplitSpace>
+	            <Button danger type="primary">
+	              Primary
+	            </Button>
+	            <Button danger>Default</Button>
+	            <Button danger type="dashed">
+	              Dashed
+	            </Button>
+	            <Button danger type="text">
+	              Text
+	            </Button>
+	            <Button danger type="link">
+	              Link
+	            </Button>
+	          </SplitSpace>
+	
+	          {/* Ghost Button */}
+	          <SplitSpace style={{ background: ''rgb(190, 200, 200)'' }}>
+	            <Button type="primary" ghost>
+	              Primary
+	            </Button>
+	            <Button ghost>Default</Button>
+	            <Button type="dashed" ghost>
+	              Dashed
+	            </Button>
+	            <Button type="primary" ghost danger>
+	              Primary
+	            </Button>
+	            <Button ghost danger>
+	              Default
+	            </Button>
+	            <Button type="dashed" ghost danger>
+	              Dashed
+	            </Button>
+	          </SplitSpace>
+	
+	          {/* Typography */}
+	          <SplitSpace>
+	            <Typography.Text type="success">Text (success)</Typography.Text>
+	            <Typography.Text type="warning">Text(warning)</Typography.Text>
+	            <Typography.Text type="danger">Text(danger)</Typography.Text>
+	            <Typography.Link href="https://ant.design" target="_blank">
+	              Link
+	            </Typography.Link>
+	            <Typography.Text copyable>Text</Typography.Text>
+	
+	            {/* Dropdown */}
+	            <Dropdown
+	              menu={{
+	                items: [
+	                  {
+	                    key: ''1'',
+	                    label: ''1st menu item'',
+	                  },
+	                  {
+	                    key: ''2'',
+	                    label: ''a danger item'',
+	                    danger: true,
+	                  },
+	                ],
+	              }}
+	            >
+	              <a onClick={e => e.preventDefault()}>
+	                <Space>
+	                  Hover me
+	                  <DownOutlined />
+	                </Space>
+	              </a>
+	            </Dropdown>
+	
+	            {/* Spin */}
+	            <Spin />
+	          </SplitSpace>
+	
+	          {/* Menu - horizontal */}
+	          <Row gutter={16}>
+	            <Col span={12}>
+	              <Menu mode="horizontal" defaultSelectedKeys={[''mail'']} items={menuItems} />
+	            </Col>
+	            <Col span={12}>
+	              <Menu
+	                mode="horizontal"
+	                theme="dark"
+	                defaultSelectedKeys={[''mail'']}
+	                items={menuItems}
+	              />
+	            </Col>
+	          </Row>
+	
+	          {/* Menu - vertical */}
+	          <Row gutter={16}>
+	            <Col span={12}>
+	              <Menu mode="inline" defaultSelectedKeys={[''mail'']} items={menuItems} />
+	            </Col>
+	            <Col span={12}>
+	              <Menu mode="vertical" theme="dark" defaultSelectedKeys={[''mail'']} items={menuItems} />
+	            </Col>
+	          </Row>
+	
+	          {/* Pagination */}
+	          <Pagination showQuickJumper defaultCurrent={2} total={500} />
+	
+	          {/* Steps */}
+	          <Steps
+	            current={1}
+	            percent={60}
+	            items={[
+	              {
+	                title: ''Finished'',
+	                description: ''This is a description.'',
+	              },
+	              {
+	                title: ''In Progress'',
+	                subTitle: ''Left 00:00:08'',
+	                description: ''This is a description.'',
+	              },
+	              {
+	                title: ''Waiting'',
+	                description: ''This is a description.'',
+	              },
+	            ]}
+	          />
+	
+	          {/* Steps - dot */}
+	          <Steps
+	            current={2}
+	            status="error"
+	            progressDot
+	            items={[
+	              {
+	                title: ''Finished'',
+	                description: ''You can hover on the dot.'',
+	              },
+	              {
+	                title: ''In Progress'',
+	                description: ''You can hover on the dot.'',
+	              },
+	              {
+	                title: ''Error'',
+	                description: ''You can hover on the dot.'',
+	              },
+	              {
+	                title: ''Waiting'',
+	                description: ''You can hover on the dot.'',
+	              },
+	            ]}
+	          />
+	
+	          {/* Form - Input */}
+	          <Form>
+	            <SplitSpace>
+	              <Form.Item>
+	                <Input {...inputProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="success">
+	                <Input {...inputProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="warning">
+	                <Input {...inputProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="error">
+	                <Input {...inputProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="validating">
+	                <Input {...inputProps} />
+	              </Form.Item>
+	            </SplitSpace>
+	          </Form>
+	
+	          {/* Form - Select */}
+	          <Form>
+	            <SplitSpace>
+	              <Form.Item>
+	                <Select {...selectProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="success">
+	                <Select {...selectProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="warning">
+	                <Select {...selectProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="error">
+	                <Select {...selectProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="validating">
+	                <Select {...selectProps} />
+	              </Form.Item>
+	            </SplitSpace>
+	          </Form>
+	
+	          {/* Form - TreeSelect */}
+	          <Form>
+	            <SplitSpace>
+	              <Form.Item>
+	                <TreeSelect {...treeSelectProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="success">
+	                <TreeSelect {...treeSelectProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="warning">
+	                <TreeSelect {...treeSelectProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="error">
+	                <TreeSelect {...treeSelectProps} />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="validating">
+	                <TreeSelect {...treeSelectProps} />
+	              </Form.Item>
+	            </SplitSpace>
+	          </Form>
+	
+	          {/* Form - InputNumber */}
+	          <Form>
+	            <SplitSpace>
+	              <Form.Item>
+	                <InputNumber />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="success">
+	                <InputNumber />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="warning">
+	                <InputNumber />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="error">
+	                <InputNumber />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="validating">
+	                <InputNumber />
+	              </Form.Item>
+	            </SplitSpace>
+	          </Form>
+	
+	          {/* Form - DatePicker */}
+	          <Form>
+	            <SplitSpace>
+	              <Form.Item>
+	                <DatePicker />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="success">
+	                <DatePicker />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="warning">
+	                <DatePicker />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="error">
+	                <DatePicker />
+	              </Form.Item>
+	              <Form.Item hasFeedback validateStatus="validating">
+	                <DatePicker />
+	              </Form.Item>
+	            </SplitSpace>
+	          </Form>
+	
+	          <SplitSpace>
+	            <Checkbox>Checkbox</Checkbox>
+	
+	            <Radio.Group defaultValue="bamboo">
+	              <Radio value="bamboo">Bamboo</Radio>
+	              <Radio value="light">Light</Radio>
+	              <Radio value="little">Little</Radio>
+	            </Radio.Group>
+	
+	            <Mentions placeholder="Mention by @">
+	              <Mentions.Option value="afc163">afc163</Mentions.Option>
+	              <Mentions.Option value="zombieJ">zombieJ</Mentions.Option>
+	              <Mentions.Option value="yesmeck">yesmeck</Mentions.Option>
+	            </Mentions>
+	
+	            <Slider defaultValue={30} style={{ width: 100 }} />
+	
+	            <Switch defaultChecked />
+	          </SplitSpace>
+	
+	          <SplitSpace>
+	            <DatePicker.RangePicker />
+	            <TimePicker.RangePicker />
+	          </SplitSpace>
+	
+	          <Row gutter={16}>
+	            <Col span={8}>
+	              {/* Card */}
+	              <Card
+	                style={{ width: ''100%'' }}
+	                tabList={carTabListNoTitle}
+	                tabBarExtraContent={<a href="#">More</a>}
+	              />
+	            </Col>
+	            <Col span={8}>
+	              {/* Table */}
+	              <Table
+	                size="small"
+	                bordered
+	                rowSelection={{}}
+	                columns={[
+	                  {
+	                    title: ''Key'',
+	                    dataIndex: ''key'',
+	                    filters: [
+	                      {
+	                        text: ''Little'',
+	                        value: ''little'',
+	                      },
+	                    ],
+	                    sorter: (a, b) => a.key.length - b.key.length,
+	                  },
+	                ]}
+	                dataSource={[
+	                  {
+	                    key: ''Bamboo'',
+	                  },
+	                  {
+	                    key: ''Light'',
+	                  },
+	                  {
+	                    key: ''Little'',
+	                  },
+	                ]}
+	              />
+	            </Col>
+	            <Col span={8}>
+	              {/* Table */}
+	              <Tabs defaultActiveKey="1">
+	                <Tabs.TabPane tab="Tab 1" key="1">
+	                  Content of Tab Pane 1
+	                </Tabs.TabPane>
+	                <Tabs.TabPane tab="Tab 2" key="2">
+	                  Content of Tab Pane 2
+	                </Tabs.TabPane>
+	                <Tabs.TabPane tab="Tab 3" key="3">
+	                  Content of Tab Pane 3
+	                </Tabs.TabPane>
+	              </Tabs>
+	            </Col>
+	          </Row>
+	
+	          <SplitSpace>
+	            <Tag color="success">success</Tag>
+	            <Tag color="processing">processing</Tag>
+	            <Tag color="error">error</Tag>
+	            <Tag color="warning">warning</Tag>
+	            <Tag color="default">default</Tag>
+	            <Tag.CheckableTag checked>CheckableTag</Tag.CheckableTag>
+	          </SplitSpace>
+	
+	          <Row gutter={16}>
+	            <Col span={16}>
+	              <Timeline mode="alternate">
+	                <Timeline.Item>Create a services site 2015-09-01</Timeline.Item>
+	                <Timeline.Item color="gray">
+	                  Solve initial network problems 2015-09-01
+	                </Timeline.Item>
+	                <Timeline.Item dot={<ClockCircleOutlined style={{ fontSize: ''16px'' }} />}>
+	                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+	                  doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+	                  veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+	                </Timeline.Item>
+	              </Timeline>
+	            </Col>
+	
+	            <Col span={8}>
+	              <Tree treeData={treeData} height={200} defaultExpandAll checkable />
+	            </Col>
+	          </Row>
+	
+	          {/* Alert */}
+	          <Row gutter={16}>
+	            <Col span={6}>
+	              <Alert showIcon message="Success Text" type="success" />
+	            </Col>
+	            <Col span={6}>
+	              <Alert showIcon message="Info Text" type="info" />
+	            </Col>
+	            <Col span={6}>
+	              <Alert showIcon message="Warning Text" type="warning" />
+	            </Col>
+	            <Col span={6}>
+	              <Alert showIcon message="Error Text" type="error" />
+	            </Col>
+	          </Row>
+	
+	          {/* Progress */}
+	          <Row gutter={16}>
+	            <Col flex="auto">
+	              <Progress percent={30} />
+	              <Progress percent={70} status="exception" />
+	              <Progress percent={100} />
+	            </Col>
+	            <Col flex="none">
+	              <Progress type="circle" percent={75} />
+	              <Progress type="circle" percent={70} status="exception" />
+	              <Progress type="circle" percent={100} />
+	            </Col>
+	          </Row>
+	
+	          <MyTransfer />
+	        </Space>
+	      </Col>
+	    </Row>
+	  );
+	};
+	
+	export default App;4.17.0API#PropertyDescriptionTypeDefaultVersionautoInsertSpaceInButtonSet false to remove space between 2 chinese characters on ButtonbooleantruecomponentDisabledConfig antd component disabledboolean-4.21.0componentSizeConfig antd component sizesmall | middle | large-cspSet Content Security Policy config{ nonce: string }-directionSet direction of layout. See demoltr | rtlltrdropdownMatchSelectWidthDetermine whether the dropdown menu and the select input are the same width. Default set min-width same as input. Will ignore when value less than select width. false will disable virtual scrollboolean | number-4.3.0formSet Form common props{ validateMessages?: ValidateMessages, requiredMark?: boolean | optional }-requiredMark: 4.8.0getPopupContainerTo set the container of the popup element. The default is to create a div element in bodyfunction(triggerNode)() => document.bodygetTargetContainerConfig Affix, Anchor scroll target container() => HTMLElement() => window4.2.0iconPrefixClsSet icon prefix className (cooperated with @iconfont-css-prefix)stringanticon4.11.0inputSet Input common props{ autoComplete?: string }-4.2.0localeLanguage package setting, you can find the packages in antd/es/localeobject-pageHeaderUnify the ghost of PageHeader, ref PageHeader{ ghost: boolean }trueprefixClsSet prefix className (cooperated with @ant-prefix)stringantrenderEmptySet empty content of components. Ref Emptyfunction(componentName: string): ReactNode-spaceSet Space size, ref Space{ size: small | middle | large | number }-4.1.0virtualDisable virtual scroll when set to falseboolean-4.3.0ConfigProvider.config() 4.13.0+#Setting Modal、Message、Notification rootPrefixCls.ConfigProvider.config({
+	  prefixCls: ''ant'', // 4.13.0+
+	  iconPrefixCls: ''anticon'', // 4.17.0+
+	});FAQ#How to contribute a new language?#See <Adding new language>.Does the locale problem still exist in DatePicker even if ConfigProvider locale is used?#Please make sure you set moment locale or that you don''t have two different versions of moment.import ''moment/locale/zh-cn'';
+	moment.locale(''zh-cn'');Date-related components locale is not working?#See FAQ Date-related-components-locale-is-not-working?Modal throw error when setting getPopupContainer?#Related issue: https://github.com/ant-design/ant-design/issues/19974When you config getPopupContainer to parentNode globally, Modal will throw error of triggerNode is undefined because it did not have a triggerNode. You can try the fix below. <ConfigProvider
+	-  getPopupContainer={triggerNode => triggerNode.parentNode}
+	+  getPopupContainer={node => {
+	+    if (node) {
+	+      return node.parentNode;
+	+    }
+	+    return document.body;
+	+  }}
+	 >
+	   <App />
+	 </ConfigProvider>BackTopResourcesAnt Design ChartsAnt Design ProAnt Design Pro ComponentsAnt Design MobileAnt Design Landing-Landing TemplatesScaffolds-Scaffold MarketUmi-React Application FrameworkDumi-Component doc generatorqiankun-Micro-Frontends Frameworkahooks-React Hooks LibraryAnt Motion-Motion SolutionChina Mirror 🇨🇳CommunityAwesome Ant DesignMediumTwitterAnt Design BlogExperience Cloud BlogSEE Conf-Experience Tech ConferenceHelpGitHubChange LogFAQBug ReportIssuesDiscussionsStackOverflowSegmentFaultMore ProductsYuQue-Write your document as a teamAntV-Data VisualizationEgg-Enterprise Node.js FrameworkKitchen-Sketch ToolkitAnt Financial Experience TechChange theme colorMade with ❤ by XTech
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	')
+	        RETURNING id;
+	        
+2023-12-15 06:54:43.183 GMT [82298] LOG:  00000: checkpoint complete: wrote 1846 buffers (11.3%); 1 WAL file(s) added, 0 removed, 0 recycled; write=186.217 s, sync=0.005 s, total=186.252 s; sync files=596, longest=0.001 s, average=0.001 s; distance=8559 kB, estimate=8559 kB
+2023-12-15 06:54:43.183 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 06:54:43.683 GMT [97139] ERROR:  25P02: current transaction is aborted, commands ignored until end of transaction block
+2023-12-15 06:54:43.683 GMT [97139] LOCATION:  exec_simple_query, postgres.c:1116
+2023-12-15 06:54:43.683 GMT [97139] STATEMENT:  
+	        INSERT INTO scanned_documents (href, text_content)
+	        VALUES ('https://4x.ant.design/docs/spec/values', '
+	
+	
+	
+	
+	
+	
+	Design Values - Ant Design
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Ant DesignDesignDocsComponentsResources4.24.15中文RTLMoreStarAnt DesignIntroductionDesign ValuesCasesGlobal StylesColorsLayoutFontIconsDark ModeDesign PatternsOverviewPrinciplesProximityAlignmentContrastRepetitionMake it DirectStay on the PageKeep it LightweightProvide an InvitationUse TransitionReact ImmediatelyGlobal RulesData EntryData DisplayData formatCopywritingButtonTemplate DocumentVisualization PageDetail PageVisualizationMotionIllustrationsDesign ValuesNaturalCertainMeaningfulGrowingThe design values of Ant Design provide designers with internal standards for evaluation, enlighten and inspire the design principles and design patterns, and then offer guidance and general solutions for specific design problems.Here are four design values of Ant Design:Natural#The light-speed iteration of the digital world makes products more complex. However, human consciousness and attention resources are limited. Facing this design contradiction, the pursuit of natural interaction will be the consistent direction of Ant Design.Natural user cognition: According to cognitive psychology, about 80% of external information is obtained through visual channels. The most important visual elements in the interface design, including layout, colors, illustrations, icons, etc., should fully absorb the laws of nature, thereby reducing the user''s cognitive cost and bringing authentic and smooth feelings. In some scenarios, opportunely adding other sensory channels such as hearing, touch can create a richer and more natural product experience.Natural user behavior: In the interaction with the system, the designer should fully understand the relationship between users, system roles, and task objectives, and also contextually organize system functions and services. At the same time, a series of methods such as behavior analysis, artificial intelligence and sensors could be applied to assist users to make effective decisions and reduce extra operations of users, to save users'' mental and physical resources and make human-computer interaction more natural.To get to know the past and present of natural values, please move to the column.Certain#Interfaces are the medium of interaction between users and the system. They are the means rather than the purpose. Based on the pursuit of "natural" interaction, the product interfaces created by Ant Design should be high certainty and low cooperative entropy.Designer certainty: Enterprise products are made by collaboration. The more participants, the higher the entropy of cooperation. This is why low-efficiency design and difficult maintenance of the product system exists. By exploring the design rules and modular design ideas, designers should be provided with simplified design rules, components and patterns so they can reduce the cooperative entropy and a more efficient design process.Keep restraint: Don''t make a decision before you figure it out. Designers should focus on the most valuable product features using minimal design elements to express. As Antoine de St. Exupery said: "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."Object-oriented: Explore design rules and abstract them as "objects" to enhance the flexibility and maintainability of user interface design, while reducing the designer''s subjective judgment and uncertainty of the system. For example, color value conversion and spacing typesetting.Modular design: Encapsulating the complex or reusable parts could provide limited interfaces to interact with other modules, ultimately reducing overall system complexity, thereby improving reliability and maintainability. Designers can use existing resources or abstract their reusable resources to save the unnecessary and low additional design to keep their focus on where creativity is most needed.User certainty: User''s daily work is completed through the collaboration of enterprise products. In addition to considering the consistency of a single product design, good certainty is required to be maintained across products, terminals, and systems. Consistent appearance and interaction, maintaining a familiarity to user, can reduce the difficulty of learning, cognitive and operating costs, and improve work efficiency.Meaningful#A product or function is created by a designer not because of the designer''s needs, but to carry a user''s work mission. Product design should be user-centered to promote the achievement of the user''s mission. Simultaneously, based on "nature" and "certainty" design values, we should regard user''s human needs and create meaningful human-computer interaction for the work process.Meaning of result: Clear goals, immediate feedback. Understand the objectives, clearly disassemble the sub-objectives according to the use process, and let each interaction revolve around the achievement of the main objectives. Provide appropriate and immediate feedback for each action, so that users can understand the operation results. Besides, emotional design can be used to pacify users'' negative emotions and enhance users'' positive emotions.Meaning of process: Moderate challenge, full devotion. Adjust the difficulty of work in different scenarios, make the function trigger at the right time to match the user''s skill. If not necessary, do not add entities. Do not distract users, let users focus on task achievement, rather than the interface. Let the current work be neither to simple nor too complex. The challenges are moderate, but higher challenges are raised as the user''s capabilities grow. It allows users to continue to immerse themselves in the flow of work and gain fulfilling work experience.Growing#The growth of enterprise product''s capabilities is accompanied by the evolution of user system roles. Designers should be responsible for the products they create and improve the discoverability of functions and values. Designers should design with the vision of development and consider the common growth of both ends of humans and computers.Value connection: The growth of products depends on the expansion and deep use of users, while the growth of users depends on the growth of product functions. Designers should establish system design thinking, understand the value of product functions, explore user needs in different scenarios, and establish a connection between value and needs. Let product value be discovered and help users build more effective and efficient ways of working.Man-Computer Symbiosis: More connections between product functions and user requirements make human-computer interaction closer and users and system are growing together. When designing products, users and systems should not be separated from each other. They should be considered as a dynamic group to ensure that they are flexible, inclusive and full of vitality.IntroductionCasesResourcesAnt Design ChartsAnt Design ProAnt Design Pro ComponentsAnt Design MobileAnt Design Landing-Landing TemplatesScaffolds-Scaffold MarketUmi-React Application FrameworkDumi-Component doc generatorqiankun-Micro-Frontends Frameworkahooks-React Hooks LibraryAnt Motion-Motion SolutionChina Mirror 🇨🇳CommunityAwesome Ant DesignMediumTwitterAnt Design BlogExperience Cloud BlogSEE Conf-Experience Tech ConferenceHelpGitHubChange LogFAQBug ReportIssuesDiscussionsStackOverflowSegmentFaultMore ProductsYuQue-Write your document as a teamAntV-Data VisualizationEgg-Enterprise Node.js FrameworkKitchen-Sketch ToolkitAnt Financial Experience TechChange theme colorMade with ❤ by XTech
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	')
+	        RETURNING id;
+	        
+2023-12-15 06:54:44.785 GMT [97139] ERROR:  25P02: current transaction is aborted, commands ignored until end of transaction block
+2023-12-15 06:54:44.785 GMT [97139] LOCATION:  exec_simple_query, postgres.c:1116
+2023-12-15 06:54:44.785 GMT [97139] STATEMENT:  
+	        INSERT INTO scanned_documents (href, text_content)
+	        VALUES ('https://4x.ant.design/components/layout/', '
+	
+	
+	
+	
+	
+	
+	 Layout - Ant Design
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Ant DesignDesignDocsComponentsResources4.24.15中文RTLMoreStarComponents OverviewGeneralButtonIconTypographyLayoutDividerGridLayoutSpaceNavigationAffixBreadcrumbDropdownMenuPageHeaderPaginationStepsData EntryAutoCompleteCascaderCheckboxDatePickerFormInputInputNumberMentionsRadioRateSelectSliderSwitchTimePickerTransferTreeSelectUploadData DisplayAvatarBadgeCalendarCardCarouselCollapseCommentDescriptionsEmptyImageListPopoverSegmentedStatisticTableTabsTagTimelineTooltipTreeFeedbackAlertDrawerMessageModalNotificationPopconfirmProgressResultSkeletonSpinOtherAnchorBackTopConfigProviderBasic StructureHeader-Content-FooterHeader Sider 2Header-SiderSiderCustom triggerResponsiveFixed HeaderFixed SiderAPILayoutHandling the overall layout of a page.Specification#Size#The first level navigation is left aligned near a logo, and the secondary menu is right aligned.Top Navigation: the height of the first level navigation 64px, the second level navigation 48px.Top Navigation (for landing pages): the height of the first level navigation 80px, the second level navigation 56px.Calculation formula of a top navigation: 48+8n.Calculation formula of an aside navigation: 200+8n.Interaction rules#The first level navigation and the last level navigation should be distinguishable by visualization;The current item should have the highest priority of visualization;When the current navigation item is collapsed, the style of the current navigation item is applied to its parent level;The left side navigation bar has support for both the accordion and expanding styles; you can choose the one that fits your case the best.Visualization rules#Style of a navigation should conform to its level.Emphasis by colorblockWhen background color is a deep color, you can use this pattern for the parent level navigation item of the current page.The highlight match stickWhen background color is a light color, you can use this pattern for the current page navigation item; we recommend using it for the last item of the navigation path.Highlighted fontFrom the visualization aspect, a highlighted font is stronger than colorblock; this pattern is often used for the parent level of the current item.Enlarge the size of the font12px, 14px is a standard font size of navigations, 14px is used for the first and the second level of the navigation. You can choose an appropriate font size regarding the level of your navigation.Component Overview#Layout: The layout wrapper, in which Header Sider Content Footer or Layout itself can be nested, and can be placed in any parent container.Header: The top layout with the default style, in which any element can be nested, and must be placed in Layout.Sider: The sidebar with default style and basic functions, in which any element can be nested, and must be placed in Layout.Content: The content layout with the default style, in which any element can be nested, and must be placed in Layout.Footer: The bottom layout with the default style, in which any element can be nested, and must be placed in Layout.Based on flex layout, please pay attention to the compatibility.ExamplesHeaderContentFooterHeaderSiderContentFooterHeaderContentSiderFooterSiderHeaderContentFooterBasic StructureClassic page layouts.TypeScriptJavaScriptimport { Layout } from ''antd'';
+	import React from ''react'';
+	
+	const { Header, Footer, Sider, Content } = Layout;
+	
+	const App: React.FC = () => (
+	  <>
+	    <Layout>
+	      <Header>Header</Header>
+	      <Content>Content</Content>
+	      <Footer>Footer</Footer>
+	    </Layout>
+	
+	    <Layout>
+	      <Header>Header</Header>
+	      <Layout>
+	        <Sider>Sider</Sider>
+	        <Content>Content</Content>
+	      </Layout>
+	      <Footer>Footer</Footer>
+	    </Layout>
+	
+	    <Layout>
+	      <Header>Header</Header>
+	      <Layout>
+	        <Content>Content</Content>
+	        <Sider>Sider</Sider>
+	      </Layout>
+	      <Footer>Footer</Footer>
+	    </Layout>
+	
+	    <Layout>
+	      <Sider>Sider</Sider>
+	      <Layout>
+	        <Header>Header</Header>
+	        <Content>Content</Content>
+	        <Footer>Footer</Footer>
+	      </Layout>
+	    </Layout>
+	  </>
+	);
+	
+	export default App;nav 1nav 2nav 3nav 4nav 5nav 6nav 7nav 8nav 9nav 10nav 11nav 12nav 13nav 14nav 15Home/List/App/ContentAnt Design ©2018 Created by Ant UEDHeader-Content-FooterThe most basic "header-content-footer" layout.Generally, the mainnav is placed at the top of the page, and includes the logo, the first level navigation, and the secondary menu (users, settings, notifications) from left to right in it. We always put contents in a fixed size navigation (eg: 1200px), the layout of the whole page is stable, it''s not affected by viewing area.Top-bottom structure is conform with the top-bottom viewing habit, it''s a classical navigation pattern of websites. This pattern demonstrates efficiency in the main workarea, while using some vertical space. And because the horizontal space of the navigation is limited, this pattern is not suitable for cases when the first level navigation contains many elements or links.TypeScriptJavaScriptimport { Breadcrumb, Layout, Menu } from ''antd'';
+	import React from ''react'';
+	
+	const { Header, Content, Footer } = Layout;
+	
+	const App: React.FC = () => (
+	  <Layout className="layout">
+	    <Header>
+	      <div className="logo" />
+	      <Menu
+	        theme="dark"
+	        mode="horizontal"
+	        defaultSelectedKeys={[''2'']}
+	        items={new Array(15).fill(null).map((_, index) => {
+	          const key = index + 1;
+	          return {
+	            key,
+	            label: `nav ${key}`,
+	          };
+	        })}
+	      />
+	    </Header>
+	    <Content style={{ padding: ''0 50px'' }}>
+	      <Breadcrumb style={{ margin: ''16px 0'' }}>
+	        <Breadcrumb.Item>Home</Breadcrumb.Item>
+	        <Breadcrumb.Item>List</Breadcrumb.Item>
+	        <Breadcrumb.Item>App</Breadcrumb.Item>
+	      </Breadcrumb>
+	      <div className="site-layout-content">Content</div>
+	    </Content>
+	    <Footer style={{ textAlign: ''center'' }}>Ant Design ©2018 Created by Ant UED</Footer>
+	  </Layout>
+	);
+	
+	export default App;.site-layout-content {
+	  min-height: 280px;
+	  padding: 24px;
+	  background: #fff;
+	}
+	#components-layout-demo-top .logo {
+	  float: left;
+	  width: 120px;
+	  height: 31px;
+	  margin: 16px 24px 16px 0;
+	  background: rgba(255, 255, 255, 0.3);
+	}
+	.ant-row-rtl #components-layout-demo-top .logo {
+	  float: right;
+	  margin: 16px 0 16px 24px;
+	}nav 1nav 2nav 3subnav 1option1option2option3option4subnav 2subnav 3Home/List/App/ContentHeader Sider 2Both the top navigation and the sidebar, commonly used in application site.TypeScriptJavaScriptimport { LaptopOutlined, NotificationOutlined, UserOutlined } from ''@ant-design/icons'';
+	import type { MenuProps } from ''antd'';
+	import { Breadcrumb, Layout, Menu } from ''antd'';
+	import React from ''react'';
+	
+	const { Header, Content, Sider } = Layout;
+	
+	const items1: MenuProps[''items''] = [''1'', ''2'', ''3''].map(key => ({
+	  key,
+	  label: `nav ${key}`,
+	}));
+	
+	const items2: MenuProps[''items''] = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
+	  (icon, index) => {
+	    const key = String(index + 1);
+	
+	    return {
+	      key: `sub${key}`,
+	      icon: React.createElement(icon),
+	      label: `subnav ${key}`,
+	
+	      children: new Array(4).fill(null).map((_, j) => {
+	        const subKey = index * 4 + j + 1;
+	        return {
+	          key: subKey,
+	          label: `option${subKey}`,
+	        };
+	      }),
+	    };
+	  },
+	);
+	
+	const App: React.FC = () => (
+	  <Layout>
+	    <Header className="header">
+	      <div className="logo" />
+	      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={[''2'']} items={items1} />
+	    </Header>
+	    <Layout>
+	      <Sider width={200} className="site-layout-background">
+	        <Menu
+	          mode="inline"
+	          defaultSelectedKeys={[''1'']}
+	          defaultOpenKeys={[''sub1'']}
+	          style={{ height: ''100%'', borderRight: 0 }}
+	          items={items2}
+	        />
+	      </Sider>
+	      <Layout style={{ padding: ''0 24px 24px'' }}>
+	        <Breadcrumb style={{ margin: ''16px 0'' }}>
+	          <Breadcrumb.Item>Home</Breadcrumb.Item>
+	          <Breadcrumb.Item>List</Breadcrumb.Item>
+	          <Breadcrumb.Item>App</Breadcrumb.Item>
+	        </Breadcrumb>
+	        <Content
+	          className="site-layout-background"
+	          style={{
+	            padding: 24,
+	            margin: 0,
+	            minHeight: 280,
+	          }}
+	        >
+	          Content
+	        </Content>
+	      </Layout>
+	    </Layout>
+	  </Layout>
+	);
+	
+	export default App;#components-layout-demo-top-side-2 .logo {
+	  float: left;
+	  width: 120px;
+	  height: 31px;
+	  margin: 16px 24px 16px 0;
+	  background: rgba(255, 255, 255, 0.3);
+	}
+	
+	.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+	  float: right;
+	  margin: 16px 0 16px 24px;
+	}
+	
+	.site-layout-background {
+	  background: #fff;
+	}nav 1nav 2nav 3Home/List/App/subnav 1option1option2option3option4subnav 2subnav 3ContentAnt Design ©2018 Created by Ant UEDHeader-SiderBoth the top navigation and the sidebar, commonly used in documentation site.TypeScriptJavaScriptimport { LaptopOutlined, NotificationOutlined, UserOutlined } from ''@ant-design/icons'';
+	import type { MenuProps } from ''antd'';
+	import { Breadcrumb, Layout, Menu } from ''antd'';
+	import React from ''react'';
+	
+	const { Header, Content, Footer, Sider } = Layout;
+	
+	const items1: MenuProps[''items''] = [''1'', ''2'', ''3''].map(key => ({
+	  key,
+	  label: `nav ${key}`,
+	}));
+	
+	const items2: MenuProps[''items''] = [UserOutlined, LaptopOutlined, NotificationOutlined].map(
+	  (icon, index) => {
+	    const key = String(index + 1);
+	
+	    return {
+	      key: `sub${key}`,
+	      icon: React.createElement(icon),
+	      label: `subnav ${key}`,
+	
+	      children: new Array(4).fill(null).map((_, j) => {
+	        const subKey = index * 4 + j + 1;
+	        return {
+	          key: subKey,
+	          label: `option${subKey}`,
+	        };
+	      }),
+	    };
+	  },
+	);
+	
+	const App: React.FC = () => (
+	  <Layout>
+	    <Header className="header">
+	      <div className="logo" />
+	      <Menu theme="dark" mode="horizontal" defaultSelectedKeys={[''2'']} items={items1} />
+	    </Header>
+	    <Content style={{ padding: ''0 50px'' }}>
+	      <Breadcrumb style={{ margin: ''16px 0'' }}>
+	        <Breadcrumb.Item>Home</Breadcrumb.Item>
+	        <Breadcrumb.Item>List</Breadcrumb.Item>
+	        <Breadcrumb.Item>App</Breadcrumb.Item>
+	      </Breadcrumb>
+	      <Layout className="site-layout-background" style={{ padding: ''24px 0'' }}>
+	        <Sider className="site-layout-background" width={200}>
+	          <Menu
+	            mode="inline"
+	            defaultSelectedKeys={[''1'']}
+	            defaultOpenKeys={[''sub1'']}
+	            style={{ height: ''100%'' }}
+	            items={items2}
+	          />
+	        </Sider>
+	        <Content style={{ padding: ''0 24px'', minHeight: 280 }}>Content</Content>
+	      </Layout>
+	    </Content>
+	    <Footer style={{ textAlign: ''center'' }}>Ant Design ©2018 Created by Ant UED</Footer>
+	  </Layout>
+	);
+	
+	export default App;#components-layout-demo-top-side .logo {
+	  float: left;
+	  width: 120px;
+	  height: 31px;
+	  margin: 16px 24px 16px 0;
+	  background: rgba(255, 255, 255, 0.3);
+	}
+	
+	.ant-row-rtl #components-layout-demo-top-side .logo {
+	  float: right;
+	  margin: 16px 0 16px 24px;
+	}
+	
+	.site-layout-background {
+	  background: #fff;
+	}SiderTwo-columns layout. The sider menu can be collapsed when horizontal space is limited.Generally, the mainnav is placed on the left side of the page, and the secondary menu is placed on the top of the working area. Contents will adapt the layout to the viewing area to improve the horizontal space usage, while the layout of the whole page is not stable.The level of the aside navigation is scalable. The first, second, and third level navigations could be present more fluently and relevantly, and aside navigation can be fixed, allowing the user to quickly switch and spot the current position, improving the user experience. However, this navigation occupies some horizontal space of the contents.TypeScriptJavaScriptimport {
+	  DesktopOutlined,
+	  FileOutlined,
+	  PieChartOutlined,
+	  TeamOutlined,
+	  UserOutlined,
+	} from ''@ant-design/icons'';
+	import type { MenuProps } from ''antd'';
+	import { Breadcrumb, Layout, Menu } from ''antd'';
+	import React, { useState } from ''react'';
+	
+	const { Header, Content, Footer, Sider } = Layout;
+	
+	type MenuItem = Required<MenuProps>[''items''][number];
+	
+	function getItem(
+	  label: React.ReactNode,
+	  key: React.Key,
+	  icon?: React.ReactNode,
+	  children?: MenuItem[],
+	): MenuItem {
+	  return {
+	    key,
+	    icon,
+	    children,
+	    label,
+	  } as MenuItem;
+	}
+	
+	const items: MenuItem[] = [
+	  getItem(''Option 1'', ''1'', <PieChartOutlined />),
+	  getItem(''Option 2'', ''2'', <DesktopOutlined />),
+	  getItem(''User'', ''sub1'', <UserOutlined />, [
+	    getItem(''Tom'', ''3''),
+	    getItem(''Bill'', ''4''),
+	    getItem(''Alex'', ''5''),
+	  ]),
+	  getItem(''Team'', ''sub2'', <TeamOutlined />, [getItem(''Team 1'', ''6''), getItem(''Team 2'', ''8'')]),
+	  getItem(''Files'', ''9'', <FileOutlined />),
+	];
+	
+	const App: React.FC = () => {
+	  const [collapsed, setCollapsed] = useState(false);
+	
+	  return (
+	    <Layout style={{ minHeight: ''100vh'' }}>
+	      <Sider collapsible collapsed={collapsed} onCollapse={value => setCollapsed(value)}>
+	        <div className="logo" />
+	        <Menu theme="dark" defaultSelectedKeys={[''1'']} mode="inline" items={items} />
+	      </Sider>
+	      <Layout className="site-layout">
+	        <Header className="site-layout-background" style={{ padding: 0 }} />
+	        <Content style={{ margin: ''0 16px'' }}>
+	          <Breadcrumb style={{ margin: ''16px 0'' }}>
+	            <Breadcrumb.Item>User</Breadcrumb.Item>
+	            <Breadcrumb.Item>Bill</Breadcrumb.Item>
+	          </Breadcrumb>
+	          <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+	            Bill is a cat.
+	          </div>
+	        </Content>
+	        <Footer style={{ textAlign: ''center'' }}>Ant Design ©2018 Created by Ant UED</Footer>
+	      </Layout>
+	    </Layout>
+	  );
+	};
+	
+	export default App;#components-layout-demo-side .logo {
+	  height: 32px;
+	  margin: 16px;
+	  background: rgba(255, 255, 255, 0.3);
+	}
+	
+	.site-layout .site-layout-background {
+	  background: #fff;
+	}nav 1nav 2nav 3ContentCustom triggerIf you want to use a customized trigger, you can hide the default one by setting trigger={null}.TypeScriptJavaScriptimport {
+	  MenuFoldOutlined,
+	  MenuUnfoldOutlined,
+	  UploadOutlined,
+	  UserOutlined,
+	  VideoCameraOutlined,
+	} from ''@ant-design/icons'';
+	import { Layout, Menu } from ''antd'';
+	import React, { useState } from ''react'';
+	
+	const { Header, Sider, Content } = Layout;
+	
+	const App: React.FC = () => {
+	  const [collapsed, setCollapsed] = useState(false);
+	
+	  return (
+	    <Layout>
+	      <Sider trigger={null} collapsible collapsed={collapsed}>
+	        <div className="logo" />
+	        <Menu
+	          theme="dark"
+	          mode="inline"
+	          defaultSelectedKeys={[''1'']}
+	          items={[
+	            {
+	              key: ''1'',
+	              icon: <UserOutlined />,
+	              label: ''nav 1'',
+	            },
+	            {
+	              key: ''2'',
+	              icon: <VideoCameraOutlined />,
+	              label: ''nav 2'',
+	            },
+	            {
+	              key: ''3'',
+	              icon: <UploadOutlined />,
+	              label: ''nav 3'',
+	            },
+	          ]}
+	        />
+	      </Sider>
+	      <Layout className="site-layout">
+	        <Header className="site-layout-background" style={{ padding: 0 }}>
+	          {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
+	            className: ''trigger'',
+	            onClick: () => setCollapsed(!collapsed),
+	          })}
+	        </Header>
+	        <Content
+	          className="site-layout-background"
+	          style={{
+	            margin: ''24px 16px'',
+	            padding: 24,
+	            minHeight: 280,
+	          }}
+	        >
+	          Content
+	        </Content>
+	      </Layout>
+	    </Layout>
+	  );
+	};
+	
+	export default App;#components-layout-demo-custom-trigger .trigger {
+	  padding: 0 24px;
+	  font-size: 18px;
+	  line-height: 64px;
+	  cursor: pointer;
+	  transition: color 0.3s;
+	}
+	
+	#components-layout-demo-custom-trigger .trigger:hover {
+	  color: #1890ff;
+	}
+	
+	#components-layout-demo-custom-trigger .logo {
+	  height: 32px;
+	  margin: 16px;
+	  background: rgba(255, 255, 255, 0.3);
+	}
+	
+	.site-layout .site-layout-background {
+	  background: #fff;
+	}nav 1nav 2nav 3nav 4contentAnt Design ©2018 Created by Ant UEDResponsiveLayout.Sider supports responsive layout.Note: You can get a responsive layout by setting breakpoint, the Sider will collapse to the width of collapsedWidth when window width is below the breakpoint. And a special trigger will appear if the collapsedWidth is set to 0.TypeScriptJavaScriptimport { UploadOutlined, UserOutlined, VideoCameraOutlined } from ''@ant-design/icons'';
+	import { Layout, Menu } from ''antd'';
+	import React from ''react'';
+	
+	const { Header, Content, Footer, Sider } = Layout;
+	
+	const App: React.FC = () => (
+	  <Layout>
+	    <Sider
+	      breakpoint="lg"
+	      collapsedWidth="0"
+	      onBreakpoint={broken => {
+	        console.log(broken);
+	      }}
+	      onCollapse={(collapsed, type) => {
+	        console.log(collapsed, type);
+	      }}
+	    >
+	      <div className="logo" />
+	      <Menu
+	        theme="dark"
+	        mode="inline"
+	        defaultSelectedKeys={[''4'']}
+	        items={[UserOutlined, VideoCameraOutlined, UploadOutlined, UserOutlined].map(
+	          (icon, index) => ({
+	            key: String(index + 1),
+	            icon: React.createElement(icon),
+	            label: `nav ${index + 1}`,
+	          }),
+	        )}
+	      />
+	    </Sider>
+	    <Layout>
+	      <Header className="site-layout-sub-header-background" style={{ padding: 0 }} />
+	      <Content style={{ margin: ''24px 16px 0'' }}>
+	        <div className="site-layout-background" style={{ padding: 24, minHeight: 360 }}>
+	          content
+	        </div>
+	      </Content>
+	      <Footer style={{ textAlign: ''center'' }}>Ant Design ©2018 Created by Ant UED</Footer>
+	    </Layout>
+	  </Layout>
+	);
+	
+	export default App;#components-layout-demo-responsive .logo {
+	  height: 32px;
+	  margin: 16px;
+	  background: rgba(255, 255, 255, 0.2);
+	}
+	
+	.site-layout-sub-header-background {
+	  background: #fff;
+	}
+	
+	.site-layout-background {
+	  background: #fff;
+	}Fixed HeaderFixed Header is generally used to fix the top navigation to facilitate page switching.TypeScriptJavaScriptimport { Breadcrumb, Layout, Menu } from ''antd'';
+	import React from ''react'';
+	
+	const { Header, Content, Footer } = Layout;
+	
+	const App: React.FC = () => (
+	  <Layout>
+	    <Header style={{ position: ''sticky'', top: 0, zIndex: 1, width: ''100%'' }}>
+	      <div className="logo" />
+	      <Menu
+	        theme="dark"
+	        mode="horizontal"
+	        defaultSelectedKeys={[''2'']}
+	        items={new Array(3).fill(null).map((_, index) => ({
+	          key: String(index + 1),
+	          label: `nav ${index + 1}`,
+	        }))}
+	      />
+	    </Header>
+	    <Content className="site-layout" style={{ padding: ''0 50px'' }}>
+	      <Breadcrumb style={{ margin: ''16px 0'' }}>
+	        <Breadcrumb.Item>Home</Breadcrumb.Item>
+	        <Breadcrumb.Item>List</Breadcrumb.Item>
+	        <Breadcrumb.Item>App</Breadcrumb.Item>
+	      </Breadcrumb>
+	      <div className="site-layout-background" style={{ padding: 24, minHeight: 380 }}>
+	        Content
+	      </div>
+	    </Content>
+	    <Footer style={{ textAlign: ''center'' }}>Ant Design ©2018 Created by Ant UED</Footer>
+	  </Layout>
+	);
+	
+	export default App;#components-layout-demo-fixed .logo {
+	  float: left;
+	  width: 120px;
+	  height: 31px;
+	  margin: 16px 24px 16px 0;
+	  background: rgba(255, 255, 255, 0.2);
+	}
+	.site-layout .site-layout-background {
+	  background: #fff;
+	}Fixed SiderWhen dealing with long content, a fixed sider can provide a better user experience.TypeScriptJavaScriptimport {
+	  AppstoreOutlined,
+	  BarChartOutlined,
+	  CloudOutlined,
+	  ShopOutlined,
+	  TeamOutlined,
+	  UploadOutlined,
+	  UserOutlined,
+	  VideoCameraOutlined,
+	} from ''@ant-design/icons'';
+	import type { MenuProps } from ''antd'';
+	import { Layout, Menu } from ''antd'';
+	import React from ''react'';
+	
+	const { Header, Content, Footer, Sider } = Layout;
+	
+	const items: MenuProps[''items''] = [
+	  UserOutlined,
+	  VideoCameraOutlined,
+	  UploadOutlined,
+	  BarChartOutlined,
+	  CloudOutlined,
+	  AppstoreOutlined,
+	  TeamOutlined,
+	  ShopOutlined,
+	].map((icon, index) => ({
+	  key: String(index + 1),
+	  icon: React.createElement(icon),
+	  label: `nav ${index + 1}`,
+	}));
+	
+	const App: React.FC = () => (
+	  <Layout hasSider>
+	    <Sider
+	      style={{
+	        overflow: ''auto'',
+	        height: ''100vh'',
+	        position: ''fixed'',
+	        left: 0,
+	        top: 0,
+	        bottom: 0,
+	      }}
+	    >
+	      <div className="logo" />
+	      <Menu theme="dark" mode="inline" defaultSelectedKeys={[''4'']} items={items} />
+	    </Sider>
+	    <Layout className="site-layout" style={{ marginLeft: 200 }}>
+	      <Header className="site-layout-background" style={{ padding: 0 }} />
+	      <Content style={{ margin: ''24px 16px 0'', overflow: ''initial'' }}>
+	        <div className="site-layout-background" style={{ padding: 24, textAlign: ''center'' }}>
+	          <p>long content</p>
+	          {
+	            // indicates very long content
+	            Array.from({ length: 100 }, (_, index) => (
+	              <React.Fragment key={index}>
+	                {index % 20 === 0 && index ? ''more'' : ''...''}
+	                <br />
+	              </React.Fragment>
+	            ))
+	          }
+	        </div>
+	      </Content>
+	      <Footer style={{ textAlign: ''center'' }}>Ant Design ©2018 Created by Ant UED</Footer>
+	    </Layout>
+	  </Layout>
+	);
+	
+	export default App;#components-layout-demo-fixed-sider .logo {
+	  height: 32px;
+	  margin: 16px;
+	  background: rgba(255, 255, 255, 0.2);
+	}
+	.site-layout .site-layout-background {
+	  background: #fff;
+	}API#<Layout>
+	  <Header>header</Header>
+	  <Layout>
+	    <Sider>left sidebar</Sider>
+	    <Content>main content</Content>
+	    <Sider>right sidebar</Sider>
+	  </Layout>
+	  <Footer>footer</Footer>
+	</Layout>Layout#The wrapper.PropertyDescriptionTypeDefaultclassNameContainer classNamestring-hasSiderWhether contain Sider in children, don''t have to assign it normally. Useful in ssr avoid style flickeringboolean-styleTo customize the stylesCSSProperties-Layout.Sider#The sidebar.PropertyDescriptionTypeDefaultbreakpointBreakpoints of the responsive layoutxs | sm | md | lg | xl | xxl-classNameContainer classNamestring-collapsedTo set the current statusboolean-collapsedWidthWidth of the collapsed sidebar, by setting to 0 a special trigger will appearnumber80collapsibleWhether can be collapsedbooleanfalsedefaultCollapsedTo set the initial statusbooleanfalsereverseArrowReverse direction of arrow, for a sider that expands from the rightbooleanfalsestyleTo customize the stylesCSSProperties-themeColor theme of the sidebarlight | darkdarktriggerSpecify the customized trigger, set to null to hide the triggerReactNode-widthWidth of the sidebarnumber | string200zeroWidthTriggerStyleTo customize the styles of the special trigger that appears when collapsedWidth is 0object-onBreakpointThe callback function, executed when breakpoints changed(broken) => {}-onCollapseThe callback function, executed by clicking the trigger or activating the responsive layout(collapsed, type) => {}-breakpoint width#{
+	  xs: ''480px'',
+	  sm: ''576px'',
+	  md: ''768px'',
+	  lg: ''992px'',
+	  xl: ''1200px'',
+	  xxl: ''1600px'',
+	}GridSpaceResourcesAnt Design ChartsAnt Design ProAnt Design Pro ComponentsAnt Design MobileAnt Design Landing-Landing TemplatesScaffolds-Scaffold MarketUmi-React Application FrameworkDumi-Component doc generatorqiankun-Micro-Frontends Frameworkahooks-React Hooks LibraryAnt Motion-Motion SolutionChina Mirror 🇨🇳CommunityAwesome Ant DesignMediumTwitterAnt Design BlogExperience Cloud BlogSEE Conf-Experience Tech ConferenceHelpGitHubChange LogFAQBug ReportIssuesDiscussionsStackOverflowSegmentFaultMore ProductsYuQue-Write your document as a teamAntV-Data VisualizationEgg-Enterprise Node.js FrameworkKitchen-Sketch ToolkitAnt Financial Experience TechChange theme colorMade with ❤ by XTech
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	')
+	        RETURNING id;
+	        
+2023-12-15 07:00:39.198 GMT [1221] ERROR:  42P01: relation "scanned_documents" does not exist at character 22
+2023-12-15 07:00:39.198 GMT [1221] LOCATION:  parserOpenTable, parse_relation.c:1395
+2023-12-15 07:00:39.198 GMT [1221] STATEMENT:  
+	        INSERT INTO scanned_documents (href, text_content)
+	        VALUES ('https://4x.ant.design/', '
+	
+	
+	
+	
+	
+	
+	Ant Design - The world''s second most popular React UI framework
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Ant DesignDesignDocsComponentsResources4.24.15中文RTLMoreStarA design system for enterprise-level products. Create an efficient and enjoyable work experience.Getting StartedDesign LanguageRecommendedDesign language and frameworkDesign valuesThis is Ant Design''s internal standard for evaluating design quality. Based on the assumption that "everyone is pursuing happiness at work", we have added the two values of "Meaningfulness" and "Growth" on the basis of "Certainty" and "Naturalness" to guide each designer towards better judgment and decision-making.More detailsCertaintyMeaningfulnessGrowthNaturalnessGuidelinesGlobal styleDesign patternsComponentsAnt Design of React(official)Ant Design of Angular(community)Ant Design of Vue(community)AntVA new way to do data visualizationAnt Design ProOut-of-the-box UI solution for enterprise applicationsAnt Design MobileMobile UI components with Ant DesignHiTuA new generation of graphical solutionsKitchenA Sketch plugin to enhance designersIconsA set of premium iconsLearn MoreMoreResourcesAnt Design ChartsAnt Design ProAnt Design Pro ComponentsAnt Design MobileAnt Design Landing-Landing TemplatesScaffolds-Scaffold MarketUmi-React Application FrameworkDumi-Component doc generatorqiankun-Micro-Frontends Frameworkahooks-React Hooks LibraryAnt Motion-Motion SolutionChina Mirror 🇨🇳CommunityAwesome Ant DesignMediumTwitterAnt Design BlogExperience Cloud BlogSEE Conf-Experience Tech ConferenceHelpGitHubChange LogFAQBug ReportIssuesDiscussionsStackOverflowSegmentFaultMore ProductsYuQue-Write your document as a teamAntV-Data VisualizationEgg-Enterprise Node.js FrameworkKitchen-Sketch ToolkitAnt Financial Experience TechChange theme colorMade with ❤ by XTech
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	')
+	        RETURNING id;
+	        
+2023-12-15 07:06:36.207 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 07:06:36.207 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 07:06:41.081 GMT [82298] LOG:  00000: checkpoint complete: wrote 49 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.871 s, sync=0.002 s, total=4.875 s; sync files=41, longest=0.001 s, average=0.001 s; distance=152 kB, estimate=7718 kB
+2023-12-15 07:06:41.081 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 07:11:36.084 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 07:11:36.084 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 07:11:39.026 GMT [82298] LOG:  00000: checkpoint complete: wrote 30 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.937 s, sync=0.001 s, total=2.942 s; sync files=12, longest=0.001 s, average=0.001 s; distance=135 kB, estimate=6960 kB
+2023-12-15 07:11:39.026 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 07:29:20.639 GMT [82298] LOG:  00000: checkpoint starting: immediate force wait
+2023-12-15 07:29:20.639 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 07:29:20.642 GMT [82298] LOG:  00000: checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.003 s; sync files=2, longest=0.001 s, average=0.001 s; distance=1 kB, estimate=6264 kB
+2023-12-15 07:29:20.642 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 07:30:19.699 GMT [19712] ERROR:  42601: syntax error at or near "*" at character 8
+2023-12-15 07:30:19.699 GMT [19712] LOCATION:  scanner_yyerror, scan.l:1192
+2023-12-15 07:30:19.699 GMT [19712] STATEMENT:  DELETE * from scanned_document
+2023-12-15 07:34:20.682 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 07:34:20.682 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 07:34:21.800 GMT [82298] LOG:  00000: checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.116 s, sync=0.001 s, total=1.119 s; sync files=11, longest=0.001 s, average=0.001 s; distance=13 kB, estimate=5639 kB
+2023-12-15 07:34:21.800 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
