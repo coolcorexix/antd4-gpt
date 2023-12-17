@@ -43,6 +43,7 @@ def insert_multiple(connection, data_list):
         insert_query = """
         INSERT INTO scanned_document (href, text_content)
         VALUES (%s, %s)
+        ON CONFLICT (href) DO NOTHING
         RETURNING id;
         """
 
@@ -78,9 +79,9 @@ def main(start_url):
             current_url = urls_to_visit.pop()
             if current_url in visited:
                 continue
-            if counter == 2:
-                break
-            counter += 1
+            # if counter == 2:
+            #     break
+            # counter += 1
             print(f"Crawling: {current_url}")
             visited.add(current_url)
             links = get_all_links(current_url, domain)

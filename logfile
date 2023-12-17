@@ -2732,3 +2732,149 @@
 2023-12-15 07:34:20.682 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
 2023-12-15 07:34:21.800 GMT [82298] LOG:  00000: checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.116 s, sync=0.001 s, total=1.119 s; sync files=11, longest=0.001 s, average=0.001 s; distance=13 kB, estimate=5639 kB
 2023-12-15 07:34:21.800 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 07:54:20.812 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 07:54:20.812 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 07:54:21.625 GMT [82298] LOG:  00000: checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.811 s, sync=0.001 s, total=0.814 s; sync files=8, longest=0.001 s, average=0.001 s; distance=26 kB, estimate=5077 kB
+2023-12-15 07:54:21.625 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 08:04:20.653 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 08:04:20.653 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 08:04:20.960 GMT [82298] LOG:  00000: checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.304 s, sync=0.001 s, total=0.307 s; sync files=3, longest=0.001 s, average=0.001 s; distance=12 kB, estimate=4571 kB
+2023-12-15 08:04:20.960 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 08:19:42.713 GMT [48451] ERROR:  42601: syntax error at or near "ON" at character 1934
+2023-12-15 08:19:42.713 GMT [48451] LOCATION:  scanner_yyerror, scan.l:1192
+2023-12-15 08:19:42.713 GMT [48451] STATEMENT:  
+	        INSERT INTO scanned_document (href, text_content)
+	        VALUES ('https://4x.ant.design/', '
+	
+	
+	
+	
+	
+	
+	Ant Design - The world''s second most popular React UI framework
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Ant DesignDesignDocsComponentsResources4.24.15中文RTLMoreStarA design system for enterprise-level products. Create an efficient and enjoyable work experience.Getting StartedDesign LanguageRecommendedDesign language and frameworkDesign valuesThis is Ant Design''s internal standard for evaluating design quality. Based on the assumption that "everyone is pursuing happiness at work", we have added the two values of "Meaningfulness" and "Growth" on the basis of "Certainty" and "Naturalness" to guide each designer towards better judgment and decision-making.More detailsCertaintyMeaningfulnessGrowthNaturalnessGuidelinesGlobal styleDesign patternsComponentsAnt Design of React(official)Ant Design of Angular(community)Ant Design of Vue(community)AntVA new way to do data visualizationAnt Design ProOut-of-the-box UI solution for enterprise applicationsAnt Design MobileMobile UI components with Ant DesignHiTuA new generation of graphical solutionsKitchenA Sketch plugin to enhance designersIconsA set of premium iconsLearn MoreMoreResourcesAnt Design ChartsAnt Design ProAnt Design Pro ComponentsAnt Design MobileAnt Design Landing-Landing TemplatesScaffolds-Scaffold MarketUmi-React Application FrameworkDumi-Component doc generatorqiankun-Micro-Frontends Frameworkahooks-React Hooks LibraryAnt Motion-Motion SolutionChina Mirror 🇨🇳CommunityAwesome Ant DesignMediumTwitterAnt Design BlogExperience Cloud BlogSEE Conf-Experience Tech ConferenceHelpGitHubChange LogFAQBug ReportIssuesDiscussionsStackOverflowSegmentFaultMore ProductsYuQue-Write your document as a teamAntV-Data VisualizationEgg-Enterprise Node.js FrameworkKitchen-Sketch ToolkitAnt Financial Experience TechChange theme colorMade with ❤ by XTech
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	')
+	        RETURNING id ON CONFLICT (href) DO NOTHING;
+	        
+2023-12-15 08:20:51.407 GMT [51773] ERROR:  42P10: there is no unique or exclusion constraint matching the ON CONFLICT specification
+2023-12-15 08:20:51.407 GMT [51773] LOCATION:  infer_arbiter_indexes, plancat.c:863
+2023-12-15 08:20:51.407 GMT [51773] STATEMENT:  
+	        INSERT INTO scanned_document (href, text_content)
+	        VALUES ('https://4x.ant.design/', '
+	
+	
+	
+	
+	
+	
+	Ant Design - The world''s second most popular React UI framework
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	Ant DesignDesignDocsComponentsResources4.24.15中文RTLMoreStarA design system for enterprise-level products. Create an efficient and enjoyable work experience.Getting StartedDesign LanguageRecommendedDesign language and frameworkDesign valuesThis is Ant Design''s internal standard for evaluating design quality. Based on the assumption that "everyone is pursuing happiness at work", we have added the two values of "Meaningfulness" and "Growth" on the basis of "Certainty" and "Naturalness" to guide each designer towards better judgment and decision-making.More detailsCertaintyMeaningfulnessGrowthNaturalnessGuidelinesGlobal styleDesign patternsComponentsAnt Design of React(official)Ant Design of Angular(community)Ant Design of Vue(community)AntVA new way to do data visualizationAnt Design ProOut-of-the-box UI solution for enterprise applicationsAnt Design MobileMobile UI components with Ant DesignHiTuA new generation of graphical solutionsKitchenA Sketch plugin to enhance designersIconsA set of premium iconsLearn MoreMoreResourcesAnt Design ChartsAnt Design ProAnt Design Pro ComponentsAnt Design MobileAnt Design Landing-Landing TemplatesScaffolds-Scaffold MarketUmi-React Application FrameworkDumi-Component doc generatorqiankun-Micro-Frontends Frameworkahooks-React Hooks LibraryAnt Motion-Motion SolutionChina Mirror 🇨🇳CommunityAwesome Ant DesignMediumTwitterAnt Design BlogExperience Cloud BlogSEE Conf-Experience Tech ConferenceHelpGitHubChange LogFAQBug ReportIssuesDiscussionsStackOverflowSegmentFaultMore ProductsYuQue-Write your document as a teamAntV-Data VisualizationEgg-Enterprise Node.js FrameworkKitchen-Sketch ToolkitAnt Financial Experience TechChange theme colorMade with ❤ by XTech
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	')
+	        ON CONFLICT (href) DO NOTHING
+	        RETURNING id;
+	        
+2023-12-15 08:22:35.689 GMT [19712] ERROR:  23505: could not create unique index "scanned_document_href_key"
+2023-12-15 08:22:35.689 GMT [19712] DETAIL:  Key (href)=(https://4x.ant.design/) is duplicated.
+2023-12-15 08:22:35.689 GMT [19712] LOCATION:  comparetup_index_btree, tuplesort.c:4430
+2023-12-15 08:22:35.689 GMT [19712] STATEMENT:  ALTER TABLE scanned_document ADD UNIQUE (href);
+2023-12-15 08:24:20.976 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 08:24:20.976 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 08:24:23.118 GMT [82298] LOG:  00000: checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.137 s, sync=0.002 s, total=2.143 s; sync files=23, longest=0.001 s, average=0.001 s; distance=84 kB, estimate=4122 kB
+2023-12-15 08:24:23.118 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 08:25:04.716 GMT [19712] ERROR:  42883: operator does not exist: integer = text at character 205
+2023-12-15 08:25:04.716 GMT [19712] HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+2023-12-15 08:25:04.716 GMT [19712] LOCATION:  op_error, parse_oper.c:656
+2023-12-15 08:25:04.716 GMT [19712] STATEMENT:  WITH duplicate_ranks AS (
+	    SELECT 
+	        href, 
+	        ROW_NUMBER() OVER (PARTITION BY href ORDER BY id) as rank
+	    FROM 
+	        scanned_document
+	)
+	DELETE FROM 
+	    scanned_document
+	WHERE 
+	    id IN (SELECT href FROM duplicate_ranks WHERE rank > 1);
+2023-12-15 08:29:20.122 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 08:29:20.122 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 08:29:23.575 GMT [82298] LOG:  00000: checkpoint complete: wrote 35 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.448 s, sync=0.003 s, total=3.453 s; sync files=30, longest=0.001 s, average=0.001 s; distance=123 kB, estimate=3722 kB
+2023-12-15 08:29:23.575 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 08:34:20.580 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 08:34:20.580 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 08:34:40.490 GMT [82298] LOG:  00000: checkpoint complete: wrote 197 buffers (1.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=19.907 s, sync=0.001 s, total=19.910 s; sync files=12, longest=0.001 s, average=0.001 s; distance=1507 kB, estimate=3501 kB
+2023-12-15 08:34:40.490 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 08:39:20.494 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 08:39:20.494 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 08:39:21.509 GMT [82298] LOG:  00000: checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.013 s, sync=0.001 s, total=1.015 s; sync files=6, longest=0.001 s, average=0.001 s; distance=59 kB, estimate=3157 kB
+2023-12-15 08:39:21.509 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 08:49:20.484 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 08:49:20.484 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 08:49:40.659 GMT [19712] ERROR:  42601: syntax error at or near "updating" at character 71
+2023-12-15 08:49:40.659 GMT [19712] LOCATION:  scanner_yyerror, scan.l:1192
+2023-12-15 08:49:40.659 GMT [19712] STATEMENT:  SELECT href, token_count, embeddings from scanned_documentError while updating data: can't adapt type 'numpy.ndarray'
+2023-12-15 08:49:49.753 GMT [82298] LOG:  00000: checkpoint complete: wrote 290 buffers (1.8%); 0 WAL file(s) added, 0 removed, 1 recycled; write=29.265 s, sync=0.001 s, total=29.269 s; sync files=9, longest=0.001 s, average=0.001 s; distance=794 kB, estimate=2920 kB
+2023-12-15 08:49:49.753 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-15 08:54:20.755 GMT [82298] LOG:  00000: checkpoint starting: time
+2023-12-15 08:54:20.755 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-15 08:54:32.411 GMT [82298] LOG:  00000: checkpoint complete: wrote 116 buffers (0.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=11.652 s, sync=0.001 s, total=11.657 s; sync files=10, longest=0.001 s, average=0.001 s; distance=876 kB, estimate=2716 kB
+2023-12-15 08:54:32.411 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-16 09:11:28.189 GMT [82297] LOG:  00000: received smart shutdown request
+2023-12-16 09:11:28.189 GMT [82297] LOCATION:  pmdie, postmaster.c:2867
+2023-12-16 09:11:28.201 GMT [82297] LOG:  00000: background worker "logical replication launcher" (PID 82303) exited with exit code 1
+2023-12-16 09:11:28.201 GMT [82297] LOCATION:  LogChildExit, postmaster.c:3747
+2023-12-16 09:11:28.202 GMT [82298] LOG:  00000: shutting down
+2023-12-16 09:11:28.202 GMT [82298] LOCATION:  ShutdownXLOG, xlog.c:6044
+2023-12-16 09:11:28.205 GMT [82298] LOG:  00000: checkpoint starting: shutdown immediate
+2023-12-16 09:11:28.205 GMT [82298] LOCATION:  LogCheckpointStart, xlog.c:6103
+2023-12-16 09:11:28.223 GMT [82298] LOG:  00000: checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.006 s, sync=0.001 s, total=0.020 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=2444 kB
+2023-12-16 09:11:28.223 GMT [82298] LOCATION:  LogCheckpointEnd, xlog.c:6192
+2023-12-16 09:11:28.247 GMT [82297] LOG:  00000: database system is shut down
+2023-12-16 09:11:28.247 GMT [82297] LOCATION:  UnlinkLockFiles, miscinit.c:986
